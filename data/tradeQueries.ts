@@ -82,7 +82,7 @@ export const rareTradeQueries: TradeQueryConfig[] = tradeCategories.map(
       kind: 'rare',
       label: category.label,
       category: category.label,
-      limit: 200,
+      limit: 100,
       url: rareTradeUrlMap[id] ?? '',
     };
   },

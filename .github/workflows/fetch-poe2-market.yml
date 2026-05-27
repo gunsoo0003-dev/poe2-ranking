@@ -2,19 +2,24 @@ name: Fetch POE2 Market Data
 
 on:
   schedule:
-    # 매일 한국시간 21:30 실행
+    # 매일 한국시간 08:00 실행
     # GitHub Actions cron은 UTC 기준입니다.
-    # 12:30 UTC = 21:30 KST
-    - cron: '30 12 * * *'
+    # 23:00 UTC = 08:00 KST
+    - cron: '0 23 * * *'
 
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: fetch-poe2-market-data
+  cancel-in-progress: false
+
 jobs:
-  fetch-poe2-market:
+  collect-base:
     runs-on: ubuntu-latest
+    timeout-minutes: 240
 
     steps:
       - name: Checkout repository
@@ -28,14 +33,168 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fetch POE2 market data
-        run: npm run fetch:poe2
+      - name: Clean previous raw data
+        run: npm run fetch:poe2:clean
+
+      - name: Collect base group 1
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=1
+
+      - name: Wait before base group 2
+        run: sleep 900
+
+      - name: Collect base group 2
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=2
+
+      - name: Wait before base group 3
+        run: sleep 900
+
+      - name: Collect base group 3
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=3
+
+      - name: Wait before base group 4
+        run: sleep 900
+
+      - name: Collect base group 4
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=4
+
+      - name: Wait before base group 5
+        run: sleep 900
+
+      - name: Collect base group 5
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=5
+
+      - name: Wait before base group 6
+        run: sleep 900
+
+      - name: Collect base group 6
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=6
+
+      - name: Wait before base group 7
+        run: sleep 900
+
+      - name: Collect base group 7
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=base --group=7
+
+      - name: Check base raw data
+        run: |
+          ls -R data/generated/raw/ko
+          test -f data/generated/raw/ko/base-1.json
+          test -f data/generated/raw/ko/base-2.json
+          test -f data/generated/raw/ko/base-3.json
+          test -f data/generated/raw/ko/base-4.json
+          test -f data/generated/raw/ko/base-5.json
+          test -f data/generated/raw/ko/base-6.json
+          test -f data/generated/raw/ko/base-7.json
+
+      - name: Upload base raw artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: poe2-base-raw-ko
+          path: data/generated/raw/ko
+          retention-days: 1
+
+  collect-unique-rare-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    needs: collect-base
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Prepare raw directory
+        run: mkdir -p data/generated/raw/ko
+
+      - name: Download base raw artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: poe2-base-raw-ko
+          path: data/generated/raw/ko
+
+      - name: Check downloaded base raw data
+        run: |
+          ls -R data/generated/raw/ko
+          test -f data/generated/raw/ko/base-1.json
+          test -f data/generated/raw/ko/base-2.json
+          test -f data/generated/raw/ko/base-3.json
+          test -f data/generated/raw/ko/base-4.json
+          test -f data/generated/raw/ko/base-5.json
+          test -f data/generated/raw/ko/base-6.json
+          test -f data/generated/raw/ko/base-7.json
+
+      - name: Collect unique data
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=unique
+
+      - name: Wait before rare group 1
+        run: sleep 600
+
+      - name: Collect rare group 1
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=1
+
+      - name: Wait before rare group 2
+        run: sleep 600
+
+      - name: Collect rare group 2
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=2
+
+      - name: Wait before rare group 3
+        run: sleep 600
+
+      - name: Collect rare group 3
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=3
+
+      - name: Wait before rare group 4
+        run: sleep 600
+
+      - name: Collect rare group 4
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=4
+
+      - name: Wait before rare group 5
+        run: sleep 600
+
+      - name: Collect rare group 5
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=5
+
+      - name: Wait before rare group 6
+        run: sleep 600
+
+      - name: Collect rare group 6
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=6
+
+      - name: Wait before rare group 7
+        run: sleep 600
+
+      - name: Collect rare group 7
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare --group=7
+
+      - name: Check all raw data before build
+        run: |
+          ls -R data/generated/raw/ko
+          test -f data/generated/raw/ko/unique.json
+          test -f data/generated/raw/ko/base-1.json
+          test -f data/generated/raw/ko/base-2.json
+          test -f data/generated/raw/ko/base-3.json
+          test -f data/generated/raw/ko/base-4.json
+          test -f data/generated/raw/ko/base-5.json
+          test -f data/generated/raw/ko/base-6.json
+          test -f data/generated/raw/ko/base-7.json
+
+      - name: Build final POE2 market data
+        run: npx tsx scripts/fetch-poe2-market.ts --mode=build
 
       - name: Check generated data changes
         id: git-check
         run: |
           git status --short
-          if [ -n "$(git status --short data/generated)" ]; then
+          if [ -n "$(git status --short data/generated/poe2-market-ko.json data/generated/history)" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
@@ -46,6 +205,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/generated
+          git add data/generated/poe2-market-ko.json data/generated/history
           git commit -m "Update POE2 market data"
           git push

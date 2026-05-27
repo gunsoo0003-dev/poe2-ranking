@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "fetch:poe2": "tsx scripts/fetch-poe2-market.ts"
+    "fetch:poe2": "tsx scripts/fetch-poe2-market.ts",
+    "fetch:poe2:clean": "tsx scripts/fetch-poe2-market.ts --mode=clean",
+    "fetch:poe2:build": "tsx scripts/fetch-poe2-market.ts --mode=build",
+    "fetch:poe2:unique": "tsx scripts/fetch-poe2-market.ts --mode=collect --target=unique",
+    "fetch:poe2:base": "tsx scripts/fetch-poe2-market.ts --mode=collect --target=base",
+    "fetch:poe2:rare": "tsx scripts/fetch-poe2-market.ts --mode=collect --target=rare"
   },
   "dependencies": {
     "next": "16.2.6",

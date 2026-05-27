@@ -11,7 +11,7 @@ type RareModTrendSectionProps = {
   locale?: Locale;
 };
 
-const ranges: RankingRange[] = [30, 50, 100, 200];
+const ranges: RankingRange[] = [30, 50, 100];
 
 export function RareModTrendSection({
   categories,

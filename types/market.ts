@@ -1,6 +1,6 @@
 export type PeriodKey = 'daily' | 'sevenDays' | 'fifteenDays' | 'thirtyDays';
 
-export type RankingRange = 30 | 50 | 100 | 200;
+export type RankingRange = 30 | 50 | 100;
 
 export type UniquePriceBandKey =
   | 'exalted10'
