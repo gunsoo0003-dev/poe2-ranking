@@ -20,7 +20,7 @@ export const periodOptions: PeriodOption[] = [
   { key: 'thirtyDays', label: '30일' },
 ];
 
-const rankingRanges: RankingRange[] = [30, 50, 100, 200];
+const rankingRanges: RankingRange[] = [30, 50, 100];
 
 const uniqueRankingRanges: UniqueRankingRange[] = [
   'exalted10',
