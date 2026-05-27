@@ -1,0 +1,247 @@
+{
+  "queryId": "base-bow",
+  "label": "활",
+  "origin": "https://poe.game.daum.net",
+  "league": "Standard",
+  "importedQuery": {
+    "stats": [
+      {
+        "type": "and",
+        "filters": [],
+        "disabled": false
+      }
+    ],
+    "status": {
+      "option": "securable"
+    },
+    "filters": {
+      "type_filters": {
+        "filters": {
+          "rarity": {
+            "option": "normal"
+          },
+          "category": {
+            "option": "weapon.bow"
+          }
+        },
+        "disabled": false
+      }
+    }
+  },
+  "total": 4270,
+  "resultCount": 100,
+  "resultIds": [
+    "4f3df43ce16fe0cf37888d524972329f9cc69513f1802c01cbcb0e1041722d50",
+    "124992363e49899659b044e1f848d7da922a7e5c9fed463e3f9d2b4799dd5aed",
+    "a14b43fb4ded74a9a793f6011bf9f59afd1a0cd476cddd19930d476a2698a36b",
+    "2ee289548e5c06c3ac1e4f43d95dd7a8771c01ae0402cf9b00c0ff10ffa6a09a",
+    "6c5427324a4a53010caf8cf59d19904ae5c0b8b51de2a8dd59f4b20bbab92c11",
+    "79ff1a99b08d643c946b123a4ac26069556d5eaa80ae96a04630483ccf66114a",
+    "9c763e9de5113f5e990716650087ced55d6edacded0a4f1e2f16bf5628cc9c37",
+    "ba52f79b9a7e4d356dac1d7587eefe99cf3520f1aef690d3d1f4affb0afed7c7",
+    "4bbe52c6664c7bc14152d4126d511c481a6b7cd940eebd47f990be69b7628e79",
+    "351122f8c965d0c990a0fb69921a8742b25a837c28522b5c634e531deae3a45e",
+    "a82b561a27a14ba0bc30fdf098bc12fafebc398096119fee6aa001f781c98156",
+    "a769d6f429d334c250dd6368b82e9338e522c50efaad5b2a800ceadecd80b45d",
+    "b014b0c520b33a2d1cb083d91665668764584af376a7a8719723e9b3ae0d4bf0",
+    "906ffb5683149919a195b547d366bb24a85c75ac5b8407675148982f5431f2d7",
+    "1f35419de0b549efa110ca985cfe03cd905e08269aad82b76cb974d9fdf8bb31",
+    "84cb946737cb99bfacb3cd2a61f689e05a8f3e19e335a6d824bb686382cca973",
+    "5cde9a887065eccdc1faa9e1e42d2bfa44c9fa0c7f4351726600f75e92426176",
+    "7ff23a2d647df92260e0f2e987b2505cc7469f750f15c35d5b38049cc796fa3e",
+    "112720d3469e1a695d0dc8f02d206a03df57118a4524e3135a51a4f05d3eea5a",
+    "3466cae7fc8cbc2183c2f54106f2d26bcc99418f4623d4435d5c03f1ee380d3e",
+    "a0f62f47ca0c5e302b2b9700de7a557a37709f9db6d59b97fde32ee4df22ee5f",
+    "5e53052b5c4fd395d02dfcf4b9b853a20c27e5328b3a1c7362778c3c24520593",
+    "f828c727431ea08ac8e795f60dcd415042ac5bb6ec7da356eea0aefbdb3df412",
+    "f800013d9c34f0901c42716e78a1324d15ca689ddc7c9c988f596dc8509c41c9",
+    "2b6f4a29e0e4440ea2d1fcfeacd18d5b91e0bcf5d6703a9599ef48eb395dd9b0",
+    "0841d12d75eabee89ab4278d964831607c1768bbee3ecced7e5830fb9b35e630",
+    "25fa35e24de7b8b5fdcec182e7c9c07ca60b86f90e4a01c7857789c198b730de",
+    "568113fdf521c3b75801dd537ac00972e4ecb79266684580a3d2c89afb9f6685",
+    "f915ba239b68cefbeba371c343f0b7121704df945ba3a6ef227370ee1d6aeb94",
+    "d466ad425e41a3132db1878c18d2c8f29b9d37e133a7b6e576095c675866d8ea",
+    "22af3237e13002360b55cfd0884bd2c5025107a378f5a16dcb3f46ecafbd82db",
+    "f3ccabb1a1cedd25655180d709f24ceaf697fcb9a5d314af1ec65f955bf0d6ee",
+    "db3d9a0147aae1ae04fdce20e20b83cbc181ae9feebb73542ab62d8826e08267",
+    "8898241c07f78321e11e9aae0665f6d41994829f48578216ce58bbda23bf7694",
+    "135cbcc5f6463905dd2a4907f161f314a14a36a58a4871ec182317c4cdf0e9f4",
+    "b94b7fb26dfff86f6ad95cd96e1eae7c6e084a385e50d50044360a111c70a16d",
+    "53c47fe2219b7f90e25c52601a56f7ad911865014a7c1c2f068891aa46edbd99",
+    "4aabc6abd9fa418ec3b2a9a54a1c7034fc268cabcc25ce6f763f4db1d586a796",
+    "67edbe87f09e762d3533a5eb273d65ebcff21aefb23449d8229f863bc7527e14",
+    "e891fef236eb8e62f765ec9f7fc54a0f4d5d7979f9b7d9b77d1042933e57686e",
+    "db84c562ed36c50de47f01cea1dd16bf9bb6737e2893d6e0f81cc48df674de88",
+    "f399d348581019bedd4a5d846e961e29f0ec1c24b67733c0629cc90045ae54b8",
+    "fe861c32f5da83774776cd97c350ba69708019c68da8d5aa8c6ae609a58eb8e8",
+    "ab2c7bda4aadc59fe9e3d31957fea01c98bba0e510deae5ba5b13f6c37ce5675",
+    "89da330936f6e7520b05e19df11cba6d5ba2a567544a89120fe743f516c618e6",
+    "d5eb2c1e168513fcd52ced8539fb64d36ccb3e0351f349ed29b5c2bca2402edc",
+    "7a31798d158c4a595ea670b76cbe41b5bcbcfc1af764ac21c6ee4dc6ea552ea9",
+    "660e2b0d49974564dc7b9cffc69b6e0e0d879e61baac00652d2aeeb10316d241",
+    "41bfa3dcd915ffe0486131fd0e6c0aa9da52524246be2aad026f07471e0991cf",
+    "0092549cc7aa1333b8fc91dc49754e0b7a2b9c499ebbcdf0ba8d3f4a5c374f13",
+    "cbe725090bc0fc2567fda197a139107ad79ede079840430bf90e41214658664a",
+    "0a6411637ba8a1d5e108e837d23d612dbb06050f7078427aca41087de50e35a3",
+    "afbb0f9bd710d2b4b66fdc2567cb26e6da592679a5c7e2f116d25ff6c5541243",
+    "c4c57de859c3453c41f19a50868b21286bc4a42d2acfcf97a226dadb5e236197",
+    "1eec7795d6d3b50fb03c9fc2b6e4fd9a8009c08e1265173ab67568790f5abe82",
+    "cd49a96e11c5470e2e4cf41f8ffe74cb34c67c63da2a8769a46d70d29c47ed28",
+    "e9e5cb39c3a93b3154513280ac3957e0b460aeb3b4fb3601558842421a7c411e",
+    "4262448f3695ccda75426de33dea30800d0b650b9cd95aed0f4028df8a12d922",
+    "2b78ad2317f31279d6b2fb2c64bba7ed6969eefe6229ff3b5f2bf30cb5ed73bc",
+    "c5e3281906bbb335a69d97d069d250fc0800c3bc9017bebadeecac5d4c62b783",
+    "27f1db4dc481714848079984fda8134e7526e889e29146e4138a106e8190b6d1",
+    "e59b4359223d8134637061cdca6249ac76f52b2939233874d6484d980887b6c0",
+    "0204751ce5e9cb6ca02a70c15b1d7d2238ab1b13bcc4f453da5a323ebf8a7cb1",
+    "65f5da52387cf32f86c92f6b55af5e2eb4b49a422ae89a53fe36cfede054c788",
+    "7bae434ca0e91dd61a1bb76055c4b6293c41ea98e58a7a9043c2f8d20fc92d03",
+    "63d5dde31ebe8655d1ef7f5f3cd329b538e925a62cce6628793a0dec3700543d",
+    "398badcd375535adf5df618c21dc9640f45348f8760e4f3b0f00d540708fc7f3",
+    "f04bd5df28af04ac5797f8c31b2a815f83d34e78cd76fe93dd7ccbb0b16a21b5",
+    "d103c6bfac8b040852ae87c46f2c159ee224665c870ee49a87c5896972982184",
+    "5938a194844f477ed75be6a8e7faa62b6ba27c566979cd0d9d827fc75e30fa18",
+    "2a157820a70e399830c60ff2d0d7618d1f3264bdaa728b26e2781f66990ac298",
+    "1b365c626ab55fa77af1fda884c1e09965b77d38831195750884829d20cd45f3",
+    "18a03f8111bf0246d5147bbdf4a2e6582056d1e42d08be0f963698c801a4e0c6",
+    "ec974e9e861a525ab80ccf7be574ca3b3a4629f2a63a5a35a6d687cc9f032a15",
+    "969dbce535b59721dc2a68a10fdb48508753da739047efa0190bc00b0327bb69",
+    "71415f219f4c199af153c1201953a776028af4a652f842576594fb5ca975a256",
+    "11382f37eb3c3fb06351d834625107ef4b7dad4d7be08244dadd5f2f032118db",
+    "c5440736f4a31361f06777aa819fbe542db46a9ad2147ad31a4d898b10380242",
+    "e98d9b6723bc078c958536c65217eeceb67199327058977253a1f63bdee4e93d",
+    "9a4d36904fdb7b1514589fcf89a16e1ff8470881ab3afd28bf67968b07089383",
+    "98268a2d0a42ed3bb5cec743e8bd9828376ba59e56558166edbf2c770eab293b",
+    "bbcb4e8c40a4a8998ae44ca57537f96f24c10dc3be28c8790d268d734b33324c",
+    "47129f5192f8de667bceab8f395320ba58688f4de1538d5a03ab7534ad8b2577",
+    "42be3348cc4f17db29d2bfe166e74b8ff7fd22cba3c876be34495e28331f2f04",
+    "8d9f1455a185b9327b5a2bc0652d423d84e1ecd061a570f50d2a65533818dba1",
+    "adf2511286ea8f6f7f854f867d71c435c0d9e6573399bc043d40a2afbf8b5bac",
+    "3c9cc9d585d630dfd59ccc7061349a85d79bffce0d3f3accd367ec1a9cfd6fbf",
+    "4c8f91915c54b87bfee3d5f8959bf3fe665161667b93631ca7e4df119fd97f51",
+    "ebc58b87140d44c18720a9a2e6ec8e7df6f330377f757315c19fd3a0dbe8e7f5",
+    "bce34c8c9b11cbc6837c3544c9d223f71be270e5893485e639f30d06a6f96ded",
+    "77396b5a6c05271c685096cde868e9a8947d3936e2726cae705a8e64edae487a",
+    "452eb4adb41c1d1946acc5cb73ddc1df990269a43932ec0448fedd8031dfb2ca",
+    "6d6ab87316666c22670934eaf0894d468f77c4abfdffc4dd2f1b5e21f6ce4ab4",
+    "76aa52a2dbd2868bc8973f6bb0ef581a130c374b90350a31e19cf4ca7d361f46",
+    "3e8633dbfaa333cb1e59471f1d08ed2ae2973a2c36adfd680e68e308a114c9e6",
+    "a5b7ee8807b71b91fa700dae9cba53100f2bdf2ee904cd500ff5ff47ded0000e",
+    "ce17db3d989e3b7eb5ca5dbbc0ae1156679ba836ce5ff2559233a792e8fe6486",
+    "f36a4ab709a42aff57aa556bfba189ea42bc4adbe7796fbf44ce3101523c4726",
+    "3cf907c5d32059bc7f71591b1cd10969feb2f82b3eee23270ed1965e12803cf6",
+    "023ed63d8b01ddf1ceea43b364dea783c9b648efce0fa3435252140afe6eb95e"
+  ],
+  "baseBandSummaries": [
+    {
+      "label": "전체 저가순",
+      "total": 4270,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "1 exalted 이상",
+      "min": 1,
+      "currency": "exalted",
+      "total": 1508,
+      "resultCount": 100,
+      "newResultCount": 55
+    },
+    {
+      "label": "2 exalted 이상",
+      "min": 2,
+      "currency": "exalted",
+      "total": 1281,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "5 exalted 이상",
+      "min": 5,
+      "currency": "exalted",
+      "total": 1062,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "10 exalted 이상",
+      "min": 10,
+      "currency": "exalted",
+      "total": 689,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "20 exalted 이상",
+      "min": 20,
+      "currency": "exalted",
+      "total": 428,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "50 exalted 이상",
+      "min": 50,
+      "currency": "exalted",
+      "total": 210,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "1 divine 이상",
+      "min": 1,
+      "currency": "divine",
+      "total": 1783,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "2 divine 이상",
+      "min": 2,
+      "currency": "divine",
+      "total": 1050,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "5 divine 이상",
+      "min": 5,
+      "currency": "divine",
+      "total": 778,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "10 divine 이상",
+      "min": 10,
+      "currency": "divine",
+      "total": 571,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "20 divine 이상",
+      "min": 20,
+      "currency": "divine",
+      "total": 366,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "50 divine 이상",
+      "min": 50,
+      "currency": "divine",
+      "total": 236,
+      "resultCount": 100,
+      "newResultCount": 100
+    },
+    {
+      "label": "100 divine 이상",
+      "min": 100,
+      "currency": "divine",
+      "total": 128,
+      "resultCount": 100,
+      "newResultCount": 100
+    }
+  ]
+}

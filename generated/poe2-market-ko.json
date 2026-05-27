@@ -1,0 +1,46 @@
+{
+  "daily": {
+    "uniqueRankings": {
+      "50": [],
+      "100": [],
+      "200": [],
+      "300": []
+    },
+    "highValueBases": [],
+    "baseCategories": [],
+    "rareModTrends": []
+  },
+  "sevenDays": {
+    "uniqueRankings": {
+      "50": [],
+      "100": [],
+      "200": [],
+      "300": []
+    },
+    "highValueBases": [],
+    "baseCategories": [],
+    "rareModTrends": []
+  },
+  "fifteenDays": {
+    "uniqueRankings": {
+      "50": [],
+      "100": [],
+      "200": [],
+      "300": []
+    },
+    "highValueBases": [],
+    "baseCategories": [],
+    "rareModTrends": []
+  },
+  "thirtyDays": {
+    "uniqueRankings": {
+      "50": [],
+      "100": [],
+      "200": [],
+      "300": []
+    },
+    "highValueBases": [],
+    "baseCategories": [],
+    "rareModTrends": []
+  }
+}

@@ -1,0 +1,3918 @@
+{
+  "daily": {
+    "uniqueRankings": {
+      "exalted10": [],
+      "divine1": [],
+      "divine10": [],
+      "divine30": [],
+      "divine50": []
+    },
+    "highValueBases": [
+      {
+        "rank": 1,
+        "name": "맹신자 활",
+        "category": "활",
+        "listedPrice": "5 divine",
+        "priceScore": 5,
+        "sampleCount": 4
+      },
+      {
+        "rank": 2,
+        "name": "이중시위 활",
+        "category": "활",
+        "listedPrice": "2 divine",
+        "priceScore": 2,
+        "sampleCount": 4
+      },
+      {
+        "rank": 3,
+        "name": "합성궁",
+        "category": "활",
+        "listedPrice": "75 exalted",
+        "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 4,
+        "name": "포대 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 5,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 6,
+        "name": "광신도 활",
+        "category": "활",
+        "listedPrice": "5 exalted",
+        "priceScore": 0.041666666666666664,
+        "sampleCount": 5
+      },
+      {
+        "rank": 7,
+        "name": "호전적인 활",
+        "category": "활",
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
+        "sampleCount": 5
+      }
+    ],
+    "baseCategories": [
+      {
+        "category": "활",
+        "previewItem": {
+          "rank": 1,
+          "name": "맹신자 활",
+          "category": "활",
+          "listedPrice": "5 divine",
+          "priceScore": 5,
+          "sampleCount": 4
+        },
+        "filteredItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5,
+            "sampleCount": 4
+          },
+          {
+            "rank": 2,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "2 divine",
+            "priceScore": 2,
+            "sampleCount": 4
+          },
+          {
+            "rank": 3,
+            "name": "합성궁",
+            "category": "활",
+            "listedPrice": "75 exalted",
+            "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 4,
+            "name": "포대 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 5,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 6,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "5 exalted",
+            "priceScore": 0.041666666666666664,
+            "sampleCount": 5
+          },
+          {
+            "rank": 7,
+            "name": "호전적인 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 8,
+            "name": "쌍둥이자리 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 9,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "전쟁광 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
+            "name": "수호자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 14,
+            "name": "광신자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 15,
+            "name": "철목 단궁",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          }
+        ],
+        "rawItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "20 exalted",
+            "priceScore": 0.16666666666666666
+          },
+          {
+            "rank": 2,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667
+          },
+          {
+            "rank": 3,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5
+          },
+          {
+            "rank": 4,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "30 divine",
+            "priceScore": 30
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "창",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "지팡이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "마법봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "셉터",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "육척봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "한손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "양손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "부적",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "화살통",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "방패",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "버클러",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "집중구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "반지",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "목걸이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "허리띠",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "갑옷",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "투구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장갑",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장화",
+        "filteredItems": [],
+        "rawItems": []
+      }
+    ],
+    "rareModTrends": [
+      {
+        "category": "활",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 16
+              },
+              {
+                "rank": 2,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 11
+              },
+              {
+                "rank": 3,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 6
+              },
+              {
+                "rank": 4,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 6
+              },
+              {
+                "rank": 5,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 6
+              },
+              {
+                "rank": 6,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 7,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 4
+              },
+              {
+                "rank": 8,
+                "modName": "[Attack|공격] 속도 24% 증가",
+                "count": 3
+              },
+              {
+                "rank": 9,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
+              },
+              {
+                "rank": 10,
+                "modName": "[Physical|물리] 피해 45% 증가",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "range": 50,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 19
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 18
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 16
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 14
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 12
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 12
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 10
+              },
+              {
+                "rank": 9,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 23%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 10,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "range": 100,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "range": 200,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "창",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "지팡이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "마법봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "셉터",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "육척봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "한손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "양손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "부적",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "화살통",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "방패",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "버클러",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "집중구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "반지",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "목걸이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "허리띠",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "갑옷",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "투구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장갑",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장화",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      }
+    ]
+  },
+  "sevenDays": {
+    "uniqueRankings": {
+      "exalted10": [],
+      "divine1": [],
+      "divine10": [],
+      "divine30": [],
+      "divine50": []
+    },
+    "highValueBases": [
+      {
+        "rank": 1,
+        "name": "맹신자 활",
+        "category": "활",
+        "listedPrice": "5 divine",
+        "priceScore": 5,
+        "sampleCount": 4
+      },
+      {
+        "rank": 2,
+        "name": "이중시위 활",
+        "category": "활",
+        "listedPrice": "2 divine",
+        "priceScore": 2,
+        "sampleCount": 4
+      },
+      {
+        "rank": 3,
+        "name": "합성궁",
+        "category": "활",
+        "listedPrice": "75 exalted",
+        "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 4,
+        "name": "포대 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 5,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 6,
+        "name": "광신도 활",
+        "category": "활",
+        "listedPrice": "5 exalted",
+        "priceScore": 0.041666666666666664,
+        "sampleCount": 5
+      },
+      {
+        "rank": 7,
+        "name": "호전적인 활",
+        "category": "활",
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
+        "sampleCount": 5
+      }
+    ],
+    "baseCategories": [
+      {
+        "category": "활",
+        "previewItem": {
+          "rank": 1,
+          "name": "맹신자 활",
+          "category": "활",
+          "listedPrice": "5 divine",
+          "priceScore": 5,
+          "sampleCount": 4
+        },
+        "filteredItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5,
+            "sampleCount": 4
+          },
+          {
+            "rank": 2,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "2 divine",
+            "priceScore": 2,
+            "sampleCount": 4
+          },
+          {
+            "rank": 3,
+            "name": "합성궁",
+            "category": "활",
+            "listedPrice": "75 exalted",
+            "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 4,
+            "name": "포대 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 5,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 6,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "5 exalted",
+            "priceScore": 0.041666666666666664,
+            "sampleCount": 5
+          },
+          {
+            "rank": 7,
+            "name": "호전적인 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 8,
+            "name": "쌍둥이자리 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 9,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "전쟁광 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
+            "name": "수호자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 14,
+            "name": "광신자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 15,
+            "name": "철목 단궁",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          }
+        ],
+        "rawItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "20 exalted",
+            "priceScore": 0.16666666666666666
+          },
+          {
+            "rank": 2,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667
+          },
+          {
+            "rank": 3,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5
+          },
+          {
+            "rank": 4,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "30 divine",
+            "priceScore": 30
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "창",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "지팡이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "마법봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "셉터",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "육척봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "한손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "양손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "부적",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "화살통",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "방패",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "버클러",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "집중구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "반지",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "목걸이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "허리띠",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "갑옷",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "투구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장갑",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장화",
+        "filteredItems": [],
+        "rawItems": []
+      }
+    ],
+    "rareModTrends": [
+      {
+        "category": "활",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 16
+              },
+              {
+                "rank": 2,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 11
+              },
+              {
+                "rank": 3,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 6
+              },
+              {
+                "rank": 4,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 6
+              },
+              {
+                "rank": 5,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 6
+              },
+              {
+                "rank": 6,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 7,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 4
+              },
+              {
+                "rank": 8,
+                "modName": "[Attack|공격] 속도 24% 증가",
+                "count": 3
+              },
+              {
+                "rank": 9,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
+              },
+              {
+                "rank": 10,
+                "modName": "[Physical|물리] 피해 45% 증가",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "range": 50,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 19
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 18
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 16
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 14
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 12
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 12
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 10
+              },
+              {
+                "rank": 9,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 23%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 10,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "range": 100,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "range": 200,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "창",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "지팡이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "마법봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "셉터",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "육척봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "한손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "양손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "부적",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "화살통",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "방패",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "버클러",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "집중구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "반지",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "목걸이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "허리띠",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "갑옷",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "투구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장갑",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장화",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      }
+    ]
+  },
+  "fifteenDays": {
+    "uniqueRankings": {
+      "exalted10": [],
+      "divine1": [],
+      "divine10": [],
+      "divine30": [],
+      "divine50": []
+    },
+    "highValueBases": [
+      {
+        "rank": 1,
+        "name": "맹신자 활",
+        "category": "활",
+        "listedPrice": "5 divine",
+        "priceScore": 5,
+        "sampleCount": 4
+      },
+      {
+        "rank": 2,
+        "name": "이중시위 활",
+        "category": "활",
+        "listedPrice": "2 divine",
+        "priceScore": 2,
+        "sampleCount": 4
+      },
+      {
+        "rank": 3,
+        "name": "합성궁",
+        "category": "활",
+        "listedPrice": "75 exalted",
+        "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 4,
+        "name": "포대 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 5,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 6,
+        "name": "광신도 활",
+        "category": "활",
+        "listedPrice": "5 exalted",
+        "priceScore": 0.041666666666666664,
+        "sampleCount": 5
+      },
+      {
+        "rank": 7,
+        "name": "호전적인 활",
+        "category": "활",
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
+        "sampleCount": 5
+      }
+    ],
+    "baseCategories": [
+      {
+        "category": "활",
+        "previewItem": {
+          "rank": 1,
+          "name": "맹신자 활",
+          "category": "활",
+          "listedPrice": "5 divine",
+          "priceScore": 5,
+          "sampleCount": 4
+        },
+        "filteredItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5,
+            "sampleCount": 4
+          },
+          {
+            "rank": 2,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "2 divine",
+            "priceScore": 2,
+            "sampleCount": 4
+          },
+          {
+            "rank": 3,
+            "name": "합성궁",
+            "category": "활",
+            "listedPrice": "75 exalted",
+            "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 4,
+            "name": "포대 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 5,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 6,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "5 exalted",
+            "priceScore": 0.041666666666666664,
+            "sampleCount": 5
+          },
+          {
+            "rank": 7,
+            "name": "호전적인 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 8,
+            "name": "쌍둥이자리 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 9,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "전쟁광 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
+            "name": "수호자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 14,
+            "name": "광신자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 15,
+            "name": "철목 단궁",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          }
+        ],
+        "rawItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "20 exalted",
+            "priceScore": 0.16666666666666666
+          },
+          {
+            "rank": 2,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667
+          },
+          {
+            "rank": 3,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5
+          },
+          {
+            "rank": 4,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "30 divine",
+            "priceScore": 30
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "창",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "지팡이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "마법봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "셉터",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "육척봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "한손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "양손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "부적",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "화살통",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "방패",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "버클러",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "집중구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "반지",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "목걸이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "허리띠",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "갑옷",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "투구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장갑",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장화",
+        "filteredItems": [],
+        "rawItems": []
+      }
+    ],
+    "rareModTrends": [
+      {
+        "category": "활",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 16
+              },
+              {
+                "rank": 2,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 11
+              },
+              {
+                "rank": 3,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 6
+              },
+              {
+                "rank": 4,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 6
+              },
+              {
+                "rank": 5,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 6
+              },
+              {
+                "rank": 6,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 7,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 4
+              },
+              {
+                "rank": 8,
+                "modName": "[Attack|공격] 속도 24% 증가",
+                "count": 3
+              },
+              {
+                "rank": 9,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
+              },
+              {
+                "rank": 10,
+                "modName": "[Physical|물리] 피해 45% 증가",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "range": 50,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 19
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 18
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 16
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 14
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 12
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 12
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 10
+              },
+              {
+                "rank": 9,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 23%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 10,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "range": 100,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "range": 200,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "창",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "지팡이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "마법봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "셉터",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "육척봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "한손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "양손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "부적",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "화살통",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "방패",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "버클러",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "집중구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "반지",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "목걸이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "허리띠",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "갑옷",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "투구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장갑",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장화",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      }
+    ]
+  },
+  "thirtyDays": {
+    "uniqueRankings": {
+      "exalted10": [],
+      "divine1": [],
+      "divine10": [],
+      "divine30": [],
+      "divine50": []
+    },
+    "highValueBases": [
+      {
+        "rank": 1,
+        "name": "맹신자 활",
+        "category": "활",
+        "listedPrice": "5 divine",
+        "priceScore": 5,
+        "sampleCount": 4
+      },
+      {
+        "rank": 2,
+        "name": "이중시위 활",
+        "category": "활",
+        "listedPrice": "2 divine",
+        "priceScore": 2,
+        "sampleCount": 4
+      },
+      {
+        "rank": 3,
+        "name": "합성궁",
+        "category": "활",
+        "listedPrice": "75 exalted",
+        "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 4,
+        "name": "포대 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 5,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
+        "sampleCount": 5
+      },
+      {
+        "rank": 6,
+        "name": "광신도 활",
+        "category": "활",
+        "listedPrice": "5 exalted",
+        "priceScore": 0.041666666666666664,
+        "sampleCount": 5
+      },
+      {
+        "rank": 7,
+        "name": "호전적인 활",
+        "category": "활",
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
+        "sampleCount": 5
+      }
+    ],
+    "baseCategories": [
+      {
+        "category": "활",
+        "previewItem": {
+          "rank": 1,
+          "name": "맹신자 활",
+          "category": "활",
+          "listedPrice": "5 divine",
+          "priceScore": 5,
+          "sampleCount": 4
+        },
+        "filteredItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5,
+            "sampleCount": 4
+          },
+          {
+            "rank": 2,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "2 divine",
+            "priceScore": 2,
+            "sampleCount": 4
+          },
+          {
+            "rank": 3,
+            "name": "합성궁",
+            "category": "활",
+            "listedPrice": "75 exalted",
+            "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 4,
+            "name": "포대 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 5,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
+            "sampleCount": 5
+          },
+          {
+            "rank": 6,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "5 exalted",
+            "priceScore": 0.041666666666666664,
+            "sampleCount": 5
+          },
+          {
+            "rank": 7,
+            "name": "호전적인 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 8,
+            "name": "쌍둥이자리 활",
+            "category": "활",
+            "listedPrice": "2 exalted",
+            "priceScore": 0.016666666666666666,
+            "sampleCount": 5
+          },
+          {
+            "rank": 9,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "전쟁광 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
+            "name": "수호자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 14,
+            "name": "광신자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 15,
+            "name": "철목 단궁",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          }
+        ],
+        "rawItems": [
+          {
+            "rank": 1,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "20 exalted",
+            "priceScore": 0.16666666666666666
+          },
+          {
+            "rank": 2,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667
+          },
+          {
+            "rank": 3,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "5 divine",
+            "priceScore": 5
+          },
+          {
+            "rank": 4,
+            "name": "맹신자 활",
+            "category": "활",
+            "listedPrice": "30 divine",
+            "priceScore": 30
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "창",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "지팡이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "마법봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "셉터",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "육척봉",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "한손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "양손철퇴",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "부적",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "화살통",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "방패",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "버클러",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "집중구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "반지",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "목걸이",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "허리띠",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "갑옷",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "투구",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장갑",
+        "filteredItems": [],
+        "rawItems": []
+      },
+      {
+        "category": "장화",
+        "filteredItems": [],
+        "rawItems": []
+      }
+    ],
+    "rareModTrends": [
+      {
+        "category": "활",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 16
+              },
+              {
+                "rank": 2,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 11
+              },
+              {
+                "rank": 3,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 6
+              },
+              {
+                "rank": 4,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 6
+              },
+              {
+                "rank": 5,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 6
+              },
+              {
+                "rank": 6,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 7,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 4
+              },
+              {
+                "rank": 8,
+                "modName": "[Attack|공격] 속도 24% 증가",
+                "count": 3
+              },
+              {
+                "rank": 9,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
+              },
+              {
+                "rank": 10,
+                "modName": "[Physical|물리] 피해 45% 증가",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "range": 50,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 19
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 18
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 16
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 14
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 12
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 12
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 10
+              },
+              {
+                "rank": 9,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 23%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              },
+              {
+                "rank": 10,
+                "modName": "이 무기로 [HitDamage|명중]시켜 처치 시 21%의 확률로 [Onslaught|맹공] 획득",
+                "count": 4
+              }
+            ]
+          },
+          {
+            "range": 100,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          },
+          {
+            "range": 200,
+            "mods": [
+              {
+                "rank": 1,
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 33
+              },
+              {
+                "rank": 2,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 32
+              },
+              {
+                "rank": 3,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 31
+              },
+              {
+                "rank": 4,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
+                "count": 28
+              },
+              {
+                "rank": 5,
+                "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
+                "count": 26
+              },
+              {
+                "rank": 6,
+                "modName": "투사체 사거리 50% 감소",
+                "count": 23
+              },
+              {
+                "rank": 7,
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 19
+              },
+              {
+                "rank": 8,
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 18
+              },
+              {
+                "rank": 9,
+                "modName": "[Attack|공격] 속도 25% 증가",
+                "count": 12
+              },
+              {
+                "rank": 10,
+                "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
+                "count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "석궁",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "창",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "지팡이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "마법봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "셉터",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "육척봉",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "한손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "양손철퇴",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "부적",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "화살통",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "방패",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "버클러",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "집중구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "반지",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "목걸이",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "허리띠",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "갑옷",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "투구",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장갑",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      },
+      {
+        "category": "장화",
+        "ranges": [
+          {
+            "range": 30,
+            "mods": []
+          },
+          {
+            "range": 50,
+            "mods": []
+          },
+          {
+            "range": 100,
+            "mods": []
+          },
+          {
+            "range": 200,
+            "mods": []
+          }
+        ]
+      }
+    ]
+  }
+}
