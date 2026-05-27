@@ -10,26 +10,26 @@
     "highValueBases": [
       {
         "rank": 1,
-        "name": "맹신자 활",
-        "category": "활",
-        "listedPrice": "5 divine",
-        "priceScore": 5,
-        "sampleCount": 4
-      },
-      {
-        "rank": 2,
         "name": "이중시위 활",
         "category": "활",
         "listedPrice": "2 divine",
         "priceScore": 2,
-        "sampleCount": 4
+        "sampleCount": 5
       },
       {
-        "rank": 3,
+        "rank": 2,
         "name": "합성궁",
         "category": "활",
         "listedPrice": "75 exalted",
         "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 3,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
         "sampleCount": 5
       },
       {
@@ -42,23 +42,23 @@
       },
       {
         "rank": 5,
-        "name": "절멸자 활",
+        "name": "맹신자 활",
         "category": "활",
         "listedPrice": "50 exalted",
         "priceScore": 0.4166666666666667,
-        "sampleCount": 5
+        "sampleCount": 3
       },
       {
         "rank": 6,
-        "name": "광신도 활",
+        "name": "호전적인 활",
         "category": "활",
-        "listedPrice": "5 exalted",
-        "priceScore": 0.041666666666666664,
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
         "sampleCount": 5
       },
       {
         "rank": 7,
-        "name": "호전적인 활",
+        "name": "쌍둥이자리 활",
         "category": "활",
         "listedPrice": "2 exalted",
         "priceScore": 0.016666666666666666,
@@ -70,35 +70,35 @@
         "category": "활",
         "previewItem": {
           "rank": 1,
-          "name": "맹신자 활",
+          "name": "이중시위 활",
           "category": "활",
-          "listedPrice": "5 divine",
-          "priceScore": 5,
-          "sampleCount": 4
+          "listedPrice": "2 divine",
+          "priceScore": 2,
+          "sampleCount": 5
         },
         "filteredItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
-            "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5,
-            "sampleCount": 4
-          },
-          {
-            "rank": 2,
             "name": "이중시위 활",
             "category": "활",
             "listedPrice": "2 divine",
             "priceScore": 2,
-            "sampleCount": 4
+            "sampleCount": 5
           },
           {
-            "rank": 3,
+            "rank": 2,
             "name": "합성궁",
             "category": "활",
             "listedPrice": "75 exalted",
             "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 3,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
             "sampleCount": 5
           },
           {
@@ -111,22 +111,14 @@
           },
           {
             "rank": 5,
-            "name": "절멸자 활",
+            "name": "맹신자 활",
             "category": "활",
             "listedPrice": "50 exalted",
             "priceScore": 0.4166666666666667,
-            "sampleCount": 5
+            "sampleCount": 3
           },
           {
             "rank": 6,
-            "name": "광신도 활",
-            "category": "활",
-            "listedPrice": "5 exalted",
-            "priceScore": 0.041666666666666664,
-            "sampleCount": 5
-          },
-          {
-            "rank": 7,
             "name": "호전적인 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -134,7 +126,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 8,
+            "rank": 7,
             "name": "쌍둥이자리 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -142,39 +134,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 9,
-            "name": "쌍둥이 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 10,
-            "name": "지지자 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 11,
-            "name": "기병대 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 12,
-            "name": "전쟁광 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 13,
+            "rank": 8,
             "name": "수호자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -182,7 +142,39 @@
             "sampleCount": 5
           },
           {
-            "rank": 14,
+            "rank": 9,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "부족 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
             "name": "광신자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -190,8 +182,16 @@
             "sampleCount": 5
           },
           {
+            "rank": 14,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
             "rank": 15,
-            "name": "철목 단궁",
+            "name": "전쟁광 활",
             "category": "활",
             "listedPrice": "1 exalted",
             "priceScore": 0.008333333333333333,
@@ -201,31 +201,38 @@
         "rawItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "20 exalted",
-            "priceScore": 0.16666666666666666
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 2,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "50 exalted",
-            "priceScore": 0.4166666666666667
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 3,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 4,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "30 divine",
-            "priceScore": 30
+            "listedPrice": "10 divine",
+            "priceScore": 10
+          },
+          {
+            "rank": 5,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "80 divine",
+            "priceScore": 80
           }
         ]
       },
@@ -340,26 +347,26 @@
               {
                 "rank": 1,
                 "modName": "모든 [Attack|공격] 스킬 레벨 +4",
-                "count": 16
+                "count": 15
               },
               {
                 "rank": 2,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 11
+                "count": 10
               },
               {
                 "rank": 3,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 7
+              },
+              {
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
                 "count": 6
               },
               {
-                "rank": 4,
-                "modName": "투사체 사거리 50% 감소",
-                "count": 6
-              },
-              {
                 "rank": 5,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "투사체 사거리 50% 감소",
                 "count": 6
               },
               {
@@ -374,18 +381,18 @@
               },
               {
                 "rank": 8,
-                "modName": "[Attack|공격] 속도 24% 증가",
+                "modName": "[Attack|공격] 속도 23% 증가",
                 "count": 3
               },
               {
                 "rank": 9,
-                "modName": "[Physical|물리] 피해 39~66 추가",
+                "modName": "[Attack|공격] 속도 24% 증가",
                 "count": 3
               },
               {
                 "rank": 10,
-                "modName": "[Physical|물리] 피해 45% 증가",
-                "count": 2
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
               }
             ]
           },
@@ -394,43 +401,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
                 "count": 19
               },
               {
                 "rank": 2,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 18
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 16
-              },
-              {
-                "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
                 "count": 15
               },
               {
-                "rank": 5,
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 14
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 15
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 7,
                 "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 8,
                 "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 10
+                "count": 8
               },
               {
                 "rank": 9,
@@ -449,43 +456,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -495,7 +502,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           },
@@ -504,43 +511,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -550,7 +557,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           }
@@ -989,26 +996,26 @@
     "highValueBases": [
       {
         "rank": 1,
-        "name": "맹신자 활",
-        "category": "활",
-        "listedPrice": "5 divine",
-        "priceScore": 5,
-        "sampleCount": 4
-      },
-      {
-        "rank": 2,
         "name": "이중시위 활",
         "category": "활",
         "listedPrice": "2 divine",
         "priceScore": 2,
-        "sampleCount": 4
+        "sampleCount": 5
       },
       {
-        "rank": 3,
+        "rank": 2,
         "name": "합성궁",
         "category": "활",
         "listedPrice": "75 exalted",
         "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 3,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
         "sampleCount": 5
       },
       {
@@ -1021,23 +1028,23 @@
       },
       {
         "rank": 5,
-        "name": "절멸자 활",
+        "name": "맹신자 활",
         "category": "활",
         "listedPrice": "50 exalted",
         "priceScore": 0.4166666666666667,
-        "sampleCount": 5
+        "sampleCount": 3
       },
       {
         "rank": 6,
-        "name": "광신도 활",
+        "name": "호전적인 활",
         "category": "활",
-        "listedPrice": "5 exalted",
-        "priceScore": 0.041666666666666664,
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
         "sampleCount": 5
       },
       {
         "rank": 7,
-        "name": "호전적인 활",
+        "name": "쌍둥이자리 활",
         "category": "활",
         "listedPrice": "2 exalted",
         "priceScore": 0.016666666666666666,
@@ -1049,35 +1056,35 @@
         "category": "활",
         "previewItem": {
           "rank": 1,
-          "name": "맹신자 활",
+          "name": "이중시위 활",
           "category": "활",
-          "listedPrice": "5 divine",
-          "priceScore": 5,
-          "sampleCount": 4
+          "listedPrice": "2 divine",
+          "priceScore": 2,
+          "sampleCount": 5
         },
         "filteredItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
-            "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5,
-            "sampleCount": 4
-          },
-          {
-            "rank": 2,
             "name": "이중시위 활",
             "category": "활",
             "listedPrice": "2 divine",
             "priceScore": 2,
-            "sampleCount": 4
+            "sampleCount": 5
           },
           {
-            "rank": 3,
+            "rank": 2,
             "name": "합성궁",
             "category": "활",
             "listedPrice": "75 exalted",
             "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 3,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
             "sampleCount": 5
           },
           {
@@ -1090,22 +1097,14 @@
           },
           {
             "rank": 5,
-            "name": "절멸자 활",
+            "name": "맹신자 활",
             "category": "활",
             "listedPrice": "50 exalted",
             "priceScore": 0.4166666666666667,
-            "sampleCount": 5
+            "sampleCount": 3
           },
           {
             "rank": 6,
-            "name": "광신도 활",
-            "category": "활",
-            "listedPrice": "5 exalted",
-            "priceScore": 0.041666666666666664,
-            "sampleCount": 5
-          },
-          {
-            "rank": 7,
             "name": "호전적인 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -1113,7 +1112,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 8,
+            "rank": 7,
             "name": "쌍둥이자리 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -1121,39 +1120,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 9,
-            "name": "쌍둥이 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 10,
-            "name": "지지자 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 11,
-            "name": "기병대 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 12,
-            "name": "전쟁광 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 13,
+            "rank": 8,
             "name": "수호자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -1161,7 +1128,39 @@
             "sampleCount": 5
           },
           {
-            "rank": 14,
+            "rank": 9,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "부족 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
             "name": "광신자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -1169,8 +1168,16 @@
             "sampleCount": 5
           },
           {
+            "rank": 14,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
             "rank": 15,
-            "name": "철목 단궁",
+            "name": "전쟁광 활",
             "category": "활",
             "listedPrice": "1 exalted",
             "priceScore": 0.008333333333333333,
@@ -1180,31 +1187,38 @@
         "rawItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "20 exalted",
-            "priceScore": 0.16666666666666666
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 2,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "50 exalted",
-            "priceScore": 0.4166666666666667
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 3,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 4,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "30 divine",
-            "priceScore": 30
+            "listedPrice": "10 divine",
+            "priceScore": 10
+          },
+          {
+            "rank": 5,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "80 divine",
+            "priceScore": 80
           }
         ]
       },
@@ -1319,26 +1333,26 @@
               {
                 "rank": 1,
                 "modName": "모든 [Attack|공격] 스킬 레벨 +4",
-                "count": 16
+                "count": 15
               },
               {
                 "rank": 2,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 11
+                "count": 10
               },
               {
                 "rank": 3,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 7
+              },
+              {
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
                 "count": 6
               },
               {
-                "rank": 4,
-                "modName": "투사체 사거리 50% 감소",
-                "count": 6
-              },
-              {
                 "rank": 5,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "투사체 사거리 50% 감소",
                 "count": 6
               },
               {
@@ -1353,18 +1367,18 @@
               },
               {
                 "rank": 8,
-                "modName": "[Attack|공격] 속도 24% 증가",
+                "modName": "[Attack|공격] 속도 23% 증가",
                 "count": 3
               },
               {
                 "rank": 9,
-                "modName": "[Physical|물리] 피해 39~66 추가",
+                "modName": "[Attack|공격] 속도 24% 증가",
                 "count": 3
               },
               {
                 "rank": 10,
-                "modName": "[Physical|물리] 피해 45% 증가",
-                "count": 2
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
               }
             ]
           },
@@ -1373,43 +1387,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
                 "count": 19
               },
               {
                 "rank": 2,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 18
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 16
-              },
-              {
-                "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
                 "count": 15
               },
               {
-                "rank": 5,
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 14
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 15
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 7,
                 "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 8,
                 "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 10
+                "count": 8
               },
               {
                 "rank": 9,
@@ -1428,43 +1442,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -1474,7 +1488,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           },
@@ -1483,43 +1497,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -1529,7 +1543,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           }
@@ -1968,26 +1982,26 @@
     "highValueBases": [
       {
         "rank": 1,
-        "name": "맹신자 활",
-        "category": "활",
-        "listedPrice": "5 divine",
-        "priceScore": 5,
-        "sampleCount": 4
-      },
-      {
-        "rank": 2,
         "name": "이중시위 활",
         "category": "활",
         "listedPrice": "2 divine",
         "priceScore": 2,
-        "sampleCount": 4
+        "sampleCount": 5
       },
       {
-        "rank": 3,
+        "rank": 2,
         "name": "합성궁",
         "category": "활",
         "listedPrice": "75 exalted",
         "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 3,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
         "sampleCount": 5
       },
       {
@@ -2000,23 +2014,23 @@
       },
       {
         "rank": 5,
-        "name": "절멸자 활",
+        "name": "맹신자 활",
         "category": "활",
         "listedPrice": "50 exalted",
         "priceScore": 0.4166666666666667,
-        "sampleCount": 5
+        "sampleCount": 3
       },
       {
         "rank": 6,
-        "name": "광신도 활",
+        "name": "호전적인 활",
         "category": "활",
-        "listedPrice": "5 exalted",
-        "priceScore": 0.041666666666666664,
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
         "sampleCount": 5
       },
       {
         "rank": 7,
-        "name": "호전적인 활",
+        "name": "쌍둥이자리 활",
         "category": "활",
         "listedPrice": "2 exalted",
         "priceScore": 0.016666666666666666,
@@ -2028,35 +2042,35 @@
         "category": "활",
         "previewItem": {
           "rank": 1,
-          "name": "맹신자 활",
+          "name": "이중시위 활",
           "category": "활",
-          "listedPrice": "5 divine",
-          "priceScore": 5,
-          "sampleCount": 4
+          "listedPrice": "2 divine",
+          "priceScore": 2,
+          "sampleCount": 5
         },
         "filteredItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
-            "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5,
-            "sampleCount": 4
-          },
-          {
-            "rank": 2,
             "name": "이중시위 활",
             "category": "활",
             "listedPrice": "2 divine",
             "priceScore": 2,
-            "sampleCount": 4
+            "sampleCount": 5
           },
           {
-            "rank": 3,
+            "rank": 2,
             "name": "합성궁",
             "category": "활",
             "listedPrice": "75 exalted",
             "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 3,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
             "sampleCount": 5
           },
           {
@@ -2069,22 +2083,14 @@
           },
           {
             "rank": 5,
-            "name": "절멸자 활",
+            "name": "맹신자 활",
             "category": "활",
             "listedPrice": "50 exalted",
             "priceScore": 0.4166666666666667,
-            "sampleCount": 5
+            "sampleCount": 3
           },
           {
             "rank": 6,
-            "name": "광신도 활",
-            "category": "활",
-            "listedPrice": "5 exalted",
-            "priceScore": 0.041666666666666664,
-            "sampleCount": 5
-          },
-          {
-            "rank": 7,
             "name": "호전적인 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -2092,7 +2098,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 8,
+            "rank": 7,
             "name": "쌍둥이자리 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -2100,39 +2106,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 9,
-            "name": "쌍둥이 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 10,
-            "name": "지지자 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 11,
-            "name": "기병대 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 12,
-            "name": "전쟁광 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 13,
+            "rank": 8,
             "name": "수호자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -2140,7 +2114,39 @@
             "sampleCount": 5
           },
           {
-            "rank": 14,
+            "rank": 9,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "부족 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
             "name": "광신자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -2148,8 +2154,16 @@
             "sampleCount": 5
           },
           {
+            "rank": 14,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
             "rank": 15,
-            "name": "철목 단궁",
+            "name": "전쟁광 활",
             "category": "활",
             "listedPrice": "1 exalted",
             "priceScore": 0.008333333333333333,
@@ -2159,31 +2173,38 @@
         "rawItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "20 exalted",
-            "priceScore": 0.16666666666666666
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 2,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "50 exalted",
-            "priceScore": 0.4166666666666667
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 3,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 4,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "30 divine",
-            "priceScore": 30
+            "listedPrice": "10 divine",
+            "priceScore": 10
+          },
+          {
+            "rank": 5,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "80 divine",
+            "priceScore": 80
           }
         ]
       },
@@ -2298,26 +2319,26 @@
               {
                 "rank": 1,
                 "modName": "모든 [Attack|공격] 스킬 레벨 +4",
-                "count": 16
+                "count": 15
               },
               {
                 "rank": 2,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 11
+                "count": 10
               },
               {
                 "rank": 3,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 7
+              },
+              {
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
                 "count": 6
               },
               {
-                "rank": 4,
-                "modName": "투사체 사거리 50% 감소",
-                "count": 6
-              },
-              {
                 "rank": 5,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "투사체 사거리 50% 감소",
                 "count": 6
               },
               {
@@ -2332,18 +2353,18 @@
               },
               {
                 "rank": 8,
-                "modName": "[Attack|공격] 속도 24% 증가",
+                "modName": "[Attack|공격] 속도 23% 증가",
                 "count": 3
               },
               {
                 "rank": 9,
-                "modName": "[Physical|물리] 피해 39~66 추가",
+                "modName": "[Attack|공격] 속도 24% 증가",
                 "count": 3
               },
               {
                 "rank": 10,
-                "modName": "[Physical|물리] 피해 45% 증가",
-                "count": 2
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
               }
             ]
           },
@@ -2352,43 +2373,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
                 "count": 19
               },
               {
                 "rank": 2,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 18
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 16
-              },
-              {
-                "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
                 "count": 15
               },
               {
-                "rank": 5,
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 14
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 15
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 7,
                 "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 8,
                 "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 10
+                "count": 8
               },
               {
                 "rank": 9,
@@ -2407,43 +2428,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -2453,7 +2474,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           },
@@ -2462,43 +2483,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -2508,7 +2529,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           }
@@ -2947,26 +2968,26 @@
     "highValueBases": [
       {
         "rank": 1,
-        "name": "맹신자 활",
-        "category": "활",
-        "listedPrice": "5 divine",
-        "priceScore": 5,
-        "sampleCount": 4
-      },
-      {
-        "rank": 2,
         "name": "이중시위 활",
         "category": "활",
         "listedPrice": "2 divine",
         "priceScore": 2,
-        "sampleCount": 4
+        "sampleCount": 5
       },
       {
-        "rank": 3,
+        "rank": 2,
         "name": "합성궁",
         "category": "활",
         "listedPrice": "75 exalted",
         "priceScore": 0.625,
+        "sampleCount": 5
+      },
+      {
+        "rank": 3,
+        "name": "절멸자 활",
+        "category": "활",
+        "listedPrice": "50 exalted",
+        "priceScore": 0.4166666666666667,
         "sampleCount": 5
       },
       {
@@ -2979,23 +3000,23 @@
       },
       {
         "rank": 5,
-        "name": "절멸자 활",
+        "name": "맹신자 활",
         "category": "활",
         "listedPrice": "50 exalted",
         "priceScore": 0.4166666666666667,
-        "sampleCount": 5
+        "sampleCount": 3
       },
       {
         "rank": 6,
-        "name": "광신도 활",
+        "name": "호전적인 활",
         "category": "활",
-        "listedPrice": "5 exalted",
-        "priceScore": 0.041666666666666664,
+        "listedPrice": "2 exalted",
+        "priceScore": 0.016666666666666666,
         "sampleCount": 5
       },
       {
         "rank": 7,
-        "name": "호전적인 활",
+        "name": "쌍둥이자리 활",
         "category": "활",
         "listedPrice": "2 exalted",
         "priceScore": 0.016666666666666666,
@@ -3007,35 +3028,35 @@
         "category": "활",
         "previewItem": {
           "rank": 1,
-          "name": "맹신자 활",
+          "name": "이중시위 활",
           "category": "활",
-          "listedPrice": "5 divine",
-          "priceScore": 5,
-          "sampleCount": 4
+          "listedPrice": "2 divine",
+          "priceScore": 2,
+          "sampleCount": 5
         },
         "filteredItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
-            "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5,
-            "sampleCount": 4
-          },
-          {
-            "rank": 2,
             "name": "이중시위 활",
             "category": "활",
             "listedPrice": "2 divine",
             "priceScore": 2,
-            "sampleCount": 4
+            "sampleCount": 5
           },
           {
-            "rank": 3,
+            "rank": 2,
             "name": "합성궁",
             "category": "활",
             "listedPrice": "75 exalted",
             "priceScore": 0.625,
+            "sampleCount": 5
+          },
+          {
+            "rank": 3,
+            "name": "절멸자 활",
+            "category": "활",
+            "listedPrice": "50 exalted",
+            "priceScore": 0.4166666666666667,
             "sampleCount": 5
           },
           {
@@ -3048,22 +3069,14 @@
           },
           {
             "rank": 5,
-            "name": "절멸자 활",
+            "name": "맹신자 활",
             "category": "활",
             "listedPrice": "50 exalted",
             "priceScore": 0.4166666666666667,
-            "sampleCount": 5
+            "sampleCount": 3
           },
           {
             "rank": 6,
-            "name": "광신도 활",
-            "category": "활",
-            "listedPrice": "5 exalted",
-            "priceScore": 0.041666666666666664,
-            "sampleCount": 5
-          },
-          {
-            "rank": 7,
             "name": "호전적인 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -3071,7 +3084,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 8,
+            "rank": 7,
             "name": "쌍둥이자리 활",
             "category": "활",
             "listedPrice": "2 exalted",
@@ -3079,39 +3092,7 @@
             "sampleCount": 5
           },
           {
-            "rank": 9,
-            "name": "쌍둥이 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 10,
-            "name": "지지자 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 11,
-            "name": "기병대 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 12,
-            "name": "전쟁광 활",
-            "category": "활",
-            "listedPrice": "1 exalted",
-            "priceScore": 0.008333333333333333,
-            "sampleCount": 5
-          },
-          {
-            "rank": 13,
+            "rank": 8,
             "name": "수호자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -3119,7 +3100,39 @@
             "sampleCount": 5
           },
           {
-            "rank": 14,
+            "rank": 9,
+            "name": "지지자 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 10,
+            "name": "기병대 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 11,
+            "name": "부족 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 12,
+            "name": "쌍둥이 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
+            "rank": 13,
             "name": "광신자 활",
             "category": "활",
             "listedPrice": "1 exalted",
@@ -3127,8 +3140,16 @@
             "sampleCount": 5
           },
           {
+            "rank": 14,
+            "name": "광신도 활",
+            "category": "활",
+            "listedPrice": "1 exalted",
+            "priceScore": 0.008333333333333333,
+            "sampleCount": 5
+          },
+          {
             "rank": 15,
-            "name": "철목 단궁",
+            "name": "전쟁광 활",
             "category": "활",
             "listedPrice": "1 exalted",
             "priceScore": 0.008333333333333333,
@@ -3138,31 +3159,38 @@
         "rawItems": [
           {
             "rank": 1,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "20 exalted",
-            "priceScore": 0.16666666666666666
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 2,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "50 exalted",
-            "priceScore": 0.4166666666666667
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 3,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "5 divine",
-            "priceScore": 5
+            "listedPrice": "2 divine",
+            "priceScore": 2
           },
           {
             "rank": 4,
-            "name": "맹신자 활",
+            "name": "이중시위 활",
             "category": "활",
-            "listedPrice": "30 divine",
-            "priceScore": 30
+            "listedPrice": "10 divine",
+            "priceScore": 10
+          },
+          {
+            "rank": 5,
+            "name": "이중시위 활",
+            "category": "활",
+            "listedPrice": "80 divine",
+            "priceScore": 80
           }
         ]
       },
@@ -3277,26 +3305,26 @@
               {
                 "rank": 1,
                 "modName": "모든 [Attack|공격] 스킬 레벨 +4",
-                "count": 16
+                "count": 15
               },
               {
                 "rank": 2,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 11
+                "count": 10
               },
               {
                 "rank": 3,
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "count": 7
+              },
+              {
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
                 "count": 6
               },
               {
-                "rank": 4,
-                "modName": "투사체 사거리 50% 감소",
-                "count": 6
-              },
-              {
                 "rank": 5,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "투사체 사거리 50% 감소",
                 "count": 6
               },
               {
@@ -3311,18 +3339,18 @@
               },
               {
                 "rank": 8,
-                "modName": "[Attack|공격] 속도 24% 증가",
+                "modName": "[Attack|공격] 속도 23% 증가",
                 "count": 3
               },
               {
                 "rank": 9,
-                "modName": "[Physical|물리] 피해 39~66 추가",
+                "modName": "[Attack|공격] 속도 24% 증가",
                 "count": 3
               },
               {
                 "rank": 10,
-                "modName": "[Physical|물리] 피해 45% 증가",
-                "count": 2
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 3
               }
             ]
           },
@@ -3331,43 +3359,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
                 "count": 19
               },
               {
                 "rank": 2,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 18
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 16
-              },
-              {
-                "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
                 "count": 15
               },
               {
-                "rank": 5,
+                "rank": 4,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 14
+                "count": 15
+              },
+              {
+                "rank": 5,
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 15
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 7,
                 "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 12
+                "count": 10
               },
               {
                 "rank": 8,
                 "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 10
+                "count": 8
               },
               {
                 "rank": 9,
@@ -3386,43 +3414,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -3432,7 +3460,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           },
@@ -3441,43 +3469,43 @@
             "mods": [
               {
                 "rank": 1,
-                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
                 "count": 33
               },
               {
                 "rank": 2,
-                "modName": "모든 [Projectile|투사체] 스킬 레벨 +5",
-                "count": 32
+                "modName": "[Critical|치명타] 확률 +5%",
+                "count": 33
               },
               {
                 "rank": 3,
-                "modName": "[Critical|치명타] 확률 +5%",
-                "count": 31
+                "modName": "모든 [Attack|공격] 스킬 레벨 +4",
+                "count": 32
               },
               {
                 "rank": 4,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +1%",
-                "count": 28
+                "count": 25
               },
               {
                 "rank": 5,
                 "modName": "활 [Attack|공격] 시 화살 2개 추가 발사",
-                "count": 26
+                "count": 25
               },
               {
                 "rank": 6,
                 "modName": "투사체 사거리 50% 감소",
-                "count": 23
+                "count": 24
               },
               {
                 "rank": 7,
-                "modName": "[Physical|물리] 피해 179% 증가",
-                "count": 19
+                "modName": "[Physical|물리] 피해 39~66 추가",
+                "count": 21
               },
               {
                 "rank": 8,
-                "modName": "[Physical|물리] 피해 39~66 추가",
-                "count": 18
+                "modName": "[Physical|물리] 피해 179% 증가",
+                "count": 20
               },
               {
                 "rank": 9,
@@ -3487,7 +3515,7 @@
               {
                 "rank": 10,
                 "modName": "추가 화살을 발사할 [SurpassChance|초과] 확률 +200%",
-                "count": 9
+                "count": 10
               }
             ]
           }
