@@ -1,22 +1,14 @@
-'use client';
-
-import { useState } from 'react';
-
 import { BaseCategorySection } from '../../../components/BaseCategorySection';
 import { BaseRankingSection } from '../../../components/BaseRankingSection';
-import { PeriodTabs } from '../../../components/PeriodTabs';
 import { RareModTrendSection } from '../../../components/RareModTrendSection';
 import { UniqueRankingSection } from '../../../components/UniqueRankingSection';
 import generatedMarketData from '../../../data/generated/poe2-market-ko.json';
-import { periodOptions } from '../../../data/marketMockData';
-import type { MarketData, PeriodKey } from '../../../types/market';
+import type { MarketData } from '../../../types/market';
 
 const marketData = generatedMarketData as unknown as MarketData;
+const currentData = marketData.daily;
 
 export default function Poe2EnglishPage() {
-  const [activePeriod, setActivePeriod] = useState<PeriodKey>('daily');
-  const currentData = marketData[activePeriod];
-
   return (
     <main className="page-shell">
       <header className="site-header">
@@ -40,20 +32,27 @@ export default function Poe2EnglishPage() {
             trend data.
           </p>
           <p className="notice-text">
-            This data is based on publicly listed trade items. It does not
-            represent confirmed sales, real-time transaction prices, or trading
-            recommendations. Some item names and modifier labels may currently
-            appear in Korean because the test data is collected from the Korean
-            trade site.
+            This page uses Korean trade listing data as the main data source.
+            Some item names, base types, and modifier labels may appear in
+            Korean.
           </p>
         </section>
 
-        <PeriodTabs
-          activePeriod={activePeriod}
-          options={periodOptions}
-          onChange={setActivePeriod}
-          locale="en"
-        />
+        <section className="card card-padding">
+          <div className="section-title-row">
+            <div>
+              <h2 className="section-title">Data Update Notice</h2>
+              <p className="section-desc">
+                Korean market data is updated every Monday, Wednesday, and
+                Friday.
+              </p>
+              <p className="section-desc">
+                This English page uses the same Korean market data with an
+                English interface.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section className="section-stack">
           <BaseCategorySection

@@ -1,22 +1,14 @@
-'use client';
-
-import { useState } from 'react';
-
 import { BaseCategorySection } from '../../components/BaseCategorySection';
 import { BaseRankingSection } from '../../components/BaseRankingSection';
-import { PeriodTabs } from '../../components/PeriodTabs';
 import { RareModTrendSection } from '../../components/RareModTrendSection';
 import { UniqueRankingSection } from '../../components/UniqueRankingSection';
 import generatedMarketData from '../../data/generated/poe2-market-ko.json';
-import { periodOptions } from '../../data/marketMockData';
-import type { MarketData, PeriodKey } from '../../types/market';
+import type { MarketData } from '../../types/market';
 
 const marketData = generatedMarketData as unknown as MarketData;
+const currentData = marketData.daily;
 
 export default function Poe2Page() {
-  const [activePeriod, setActivePeriod] = useState<PeriodKey>('daily');
-  const currentData = marketData[activePeriod];
-
   return (
     <main className="page-shell">
       <header className="site-header">
@@ -41,17 +33,20 @@ export default function Poe2Page() {
           </p>
           <p className="notice-text">
             이 데이터는 실제 체결가나 추천 정보가 아니라 공개 등록 매물 기준의
-            수집·정리 데이터입니다. 베이스템 랭킹은 매일 오후 10시 이전
-            업데이트를 목표로 하며, 실시간 거래소 검색 결과와 다를 수 있습니다.
+            수집·정리 데이터입니다. 실시간 거래소 검색 결과와 다를 수 있습니다.
           </p>
         </section>
 
-        <PeriodTabs
-          activePeriod={activePeriod}
-          options={periodOptions}
-          onChange={setActivePeriod}
-          locale="ko"
-        />
+        <section className="card card-padding">
+          <div className="section-title-row">
+            <div>
+              <h2 className="section-title">업데이트 안내</h2>
+              <p className="section-desc">
+                한국어 데이터는 매주 월요일, 수요일, 금요일에 업데이트됩니다.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section className="section-stack">
           <BaseCategorySection
