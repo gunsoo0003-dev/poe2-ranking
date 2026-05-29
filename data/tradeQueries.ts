@@ -1,13 +1,23 @@
 export type TradeQueryKind = 'unique' | 'base' | 'rare';
 
+export type TradeLocale = 'ko' | 'en';
+
 export type TradeQueryConfig = {
   id: string;
   kind: TradeQueryKind;
   label: string;
   category?: string;
   limit: number;
-  url: string;
+  urlKo: string;
+  urlEn: string;
 };
+
+export function getTradeQueryUrl(
+  config: TradeQueryConfig,
+  locale: TradeLocale,
+) {
+  return locale === 'en' ? config.urlEn : config.urlKo;
+}
 
 const tradeCategories = [
   { id: 'bow', label: '활' },
@@ -33,19 +43,34 @@ const tradeCategories = [
   { id: 'boots', label: '장화' },
 ];
 
-const uniqueTradeUrlMap: Record<string, string> = {
+const uniqueTradeUrlMapKo: Record<string, string> = {
   'unique-all':
     'https://poe.game.daum.net/trade2/search/poe2/Standard/OJ0wg7lCE',
 };
 
-const baseTradeUrlMap: Record<string, string> = {
-  'base-bow':
-    'https://poe.game.daum.net/trade2/search/poe2/Standard/E80dn8Vu5',
+const uniqueTradeUrlMapEn: Record<string, string> = {
+  'unique-all':
+    'https://www.pathofexile.com/trade2/search/poe2/Standard/OJ0wg7lCE',
 };
 
-const rareTradeUrlMap: Record<string, string> = {
+const baseTradeUrlMapKo: Record<string, string> = {
+  'base-bow':
+    'https://poe.game.daum.net/trade2/search/poe2/Standard/9lmDp7YHK',
+};
+
+const baseTradeUrlMapEn: Record<string, string> = {
+  'base-bow':
+    'https://www.pathofexile.com/trade2/search/poe2/Standard/9lmDp7YHK',
+};
+
+const rareTradeUrlMapKo: Record<string, string> = {
   'rare-bow':
     'https://poe.game.daum.net/trade2/search/poe2/Standard/OJ0wnpzSE',
+};
+
+const rareTradeUrlMapEn: Record<string, string> = {
+  'rare-bow':
+    'https://www.pathofexile.com/trade2/search/poe2/Standard/OJ0wnpzSE',
 };
 
 export const uniqueTradeQueries: TradeQueryConfig[] = [
@@ -53,8 +78,9 @@ export const uniqueTradeQueries: TradeQueryConfig[] = [
     id: 'unique-all',
     kind: 'unique',
     label: '유니크 전체',
-    limit: 500,
-    url: uniqueTradeUrlMap['unique-all'] ?? '',
+    limit: 300,
+    urlKo: uniqueTradeUrlMapKo['unique-all'] ?? '',
+    urlEn: uniqueTradeUrlMapEn['unique-all'] ?? '',
   },
 ];
 
@@ -67,8 +93,9 @@ export const baseTradeQueries: TradeQueryConfig[] = tradeCategories.map(
       kind: 'base',
       label: category.label,
       category: category.label,
-      limit: 100,
-      url: baseTradeUrlMap[id] ?? '',
+      limit: 20,
+      urlKo: baseTradeUrlMapKo[id] ?? '',
+      urlEn: baseTradeUrlMapEn[id] ?? '',
     };
   },
 );
@@ -83,7 +110,8 @@ export const rareTradeQueries: TradeQueryConfig[] = tradeCategories.map(
       label: category.label,
       category: category.label,
       limit: 100,
-      url: rareTradeUrlMap[id] ?? '',
+      urlKo: rareTradeUrlMapKo[id] ?? '',
+      urlEn: rareTradeUrlMapEn[id] ?? '',
     };
   },
 );

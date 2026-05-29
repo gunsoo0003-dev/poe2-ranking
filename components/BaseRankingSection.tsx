@@ -1,3 +1,4 @@
+import { getCategoryName } from '../data/categoryNameMap';
 import type { BaseRankingItem } from '../types/market';
 
 type Locale = 'ko' | 'en';
@@ -34,7 +35,9 @@ export function BaseRankingSection({
             <div className="rank-number">#{item.rank}</div>
             <div className="rank-main">
               <p className="rank-name">{item.name}</p>
-              <div className="rank-meta">{item.category}</div>
+              <div className="rank-meta">
+                {getCategoryName(item.category, locale)}
+              </div>
             </div>
             <div className="rank-value">{item.listedPrice}</div>
           </article>

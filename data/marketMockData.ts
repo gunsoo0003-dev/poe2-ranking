@@ -23,7 +23,6 @@ export const periodOptions: PeriodOption[] = [
 const rankingRanges: RankingRange[] = [30, 50, 100];
 
 const uniqueRankingRanges: UniqueRankingRange[] = [
-  'exalted10',
   'divine1',
   'divine10',
   'divine30',
@@ -31,7 +30,6 @@ const uniqueRankingRanges: UniqueRankingRange[] = [
 ];
 
 export const uniqueRankingTabOptions: UniqueRankingTabOption[] = [
-  { label: '10엑잘+', value: 'exalted10', disabled: false },
   { label: '1디바인+', value: 'divine1', disabled: false },
   { label: '10디바인+', value: 'divine10', disabled: false },
   { label: '30디바인+', value: 'divine30', disabled: false },
@@ -83,14 +81,6 @@ const uniqueMockBaseCounts: Record<
     kept: number[];
   }
 > = {
-  exalted10: {
-    priceLabel: '10 exalted 이상',
-    previous: [18, 15, 13, 11, 9, 8, 7],
-    current: [12, 13, 10, 8, 8, 6, 6],
-    removed: [9, 5, 6, 5, 3, 4, 3],
-    added: [3, 3, 3, 2, 2, 2, 2],
-    kept: [9, 10, 7, 6, 6, 4, 4],
-  },
   divine1: {
     priceLabel: '1 divine 이상',
     previous: [16, 14, 12, 10, 8, 7, 6],
@@ -222,6 +212,7 @@ function buildBaseItems(
 
 function buildRawBaseItems(
   category: string,
+  baseName: string,
   periodMultiplier: number,
 ): BaseRankingItem[] {
   return Array.from({ length: 15 }, (_, index) => {
@@ -229,7 +220,7 @@ function buildRawBaseItems(
 
     return {
       rank: index + 1,
-      name: `${category} 베이스 ${index + 1}`,
+      name: baseName,
       category,
       listedPrice: formatDivine(rawPrice * periodMultiplier),
       priceScore: rawPrice * periodMultiplier,
@@ -237,16 +228,52 @@ function buildRawBaseItems(
   });
 }
 
+function buildBaseSampleItems(
+  category: string,
+  filteredItems: BaseRankingItem[],
+  periodMultiplier: number,
+): Record<string, BaseRankingItem[]> {
+  return filteredItems.reduce<Record<string, BaseRankingItem[]>>(
+    (acc, item, itemIndex) => {
+      acc[item.name] = Array.from({ length: 15 }, (_, index) => {
+        const rawPrice = Math.max(1.2, 18 - itemIndex * 0.75 - index * 0.2);
+
+        return {
+          rank: index + 1,
+          name: item.name,
+          category,
+          listedPrice: formatDivine(rawPrice * periodMultiplier),
+          priceScore: rawPrice * periodMultiplier,
+        };
+      });
+
+      return acc;
+    },
+    {},
+  );
+}
+
 function buildBaseCategories(periodMultiplier: number): BaseCategoryRanking[] {
   return itemCategories.map((category) => {
     const filteredItems = buildBaseItems(category, periodMultiplier);
-    const rawItems = buildRawBaseItems(category, periodMultiplier);
+    const topBaseName = filteredItems[0]?.name ?? `${category} 베이스 1`;
+    const rawItems = buildRawBaseItems(
+      category,
+      topBaseName,
+      periodMultiplier,
+    );
+    const baseSampleItems = buildBaseSampleItems(
+      category,
+      filteredItems,
+      periodMultiplier,
+    );
 
     return {
       category,
       previewItem: filteredItems[0],
       filteredItems,
       rawItems,
+      baseSampleItems,
     };
   });
 }

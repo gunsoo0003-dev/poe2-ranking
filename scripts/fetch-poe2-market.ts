@@ -5,6 +5,7 @@ import {
   getRareGroupCount,
 } from './poe2/collect-poe2-market';
 import { buildPoe2Market } from './poe2/build-poe2-market';
+import type { TradeLocale } from '../data/tradeQueries';
 
 type RunMode = 'full' | 'clean' | 'collect' | 'build';
 
@@ -33,6 +34,20 @@ function parseMode(): RunMode {
   }
 
   throw new Error(`지원하지 않는 mode입니다: ${mode}`);
+}
+
+function parseLocale(): TradeLocale {
+  const locale = getArgValue('locale');
+
+  if (!locale) {
+    return 'ko';
+  }
+
+  if (locale === 'ko' || locale === 'en') {
+    return locale;
+  }
+
+  throw new Error(`지원하지 않는 locale입니다: ${locale}`);
 }
 
 function parseTarget(): CollectTarget {
@@ -69,8 +84,8 @@ async function sleep(ms: number) {
   });
 }
 
-async function runFullFetch() {
-  await cleanRawPoe2MarketData();
+async function runFullFetch(locale: TradeLocale) {
+  await cleanRawPoe2MarketData(locale);
 
   const baseGroupCount = getBaseGroupCount();
 
@@ -78,6 +93,7 @@ async function runFullFetch() {
     await collectPoe2Market({
       target: 'base',
       group,
+      locale,
     });
 
     if (group < baseGroupCount) {
@@ -88,6 +104,7 @@ async function runFullFetch() {
 
   await collectPoe2Market({
     target: 'unique',
+    locale,
   });
 
   console.log('[WAIT] before rare groups: 10 minutes');
@@ -99,6 +116,7 @@ async function runFullFetch() {
     await collectPoe2Market({
       target: 'rare',
       group,
+      locale,
     });
 
     if (group < rareGroupCount) {
@@ -107,14 +125,21 @@ async function runFullFetch() {
     }
   }
 
-  await buildPoe2Market();
+  await buildPoe2Market(locale);
 }
 
 async function main() {
   const mode = parseMode();
+  const locale = parseLocale();
+
+  console.log('========================================');
+  console.log('POE2 fetch script start');
+  console.log(`mode: ${mode}`);
+  console.log(`locale: ${locale}`);
+  console.log('========================================');
 
   if (mode === 'clean') {
-    await cleanRawPoe2MarketData();
+    await cleanRawPoe2MarketData(locale);
     return;
   }
 
@@ -125,17 +150,18 @@ async function main() {
     await collectPoe2Market({
       target,
       group,
+      locale,
     });
 
     return;
   }
 
   if (mode === 'build') {
-    await buildPoe2Market();
+    await buildPoe2Market(locale);
     return;
   }
 
-  await runFullFetch();
+  await runFullFetch(locale);
 }
 
 main().catch((error) => {

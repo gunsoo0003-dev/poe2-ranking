@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 
+import { getCategoryName } from '../data/categoryNameMap';
 import type { BaseCategoryRanking, BaseRankingItem } from '../types/market';
 
 type Locale = 'ko' | 'en';
@@ -11,17 +12,23 @@ type BaseCategorySectionProps = {
   locale?: Locale;
 };
 
+type RankingListProps = {
+  title: string;
+  description: string;
+  items: BaseRankingItem[];
+  locale: Locale;
+  activeItemName?: string;
+  onItemClick?: (item: BaseRankingItem) => void;
+};
+
 function RankingList({
   title,
   description,
   items,
   locale,
-}: {
-  title: string;
-  description: string;
-  items: BaseRankingItem[];
-  locale: Locale;
-}) {
+  activeItemName,
+  onItemClick,
+}: RankingListProps) {
   const isEnglish = locale === 'en';
 
   return (
@@ -32,16 +39,38 @@ function RankingList({
       </div>
 
       <div className="mini-list">
-        {items.slice(0, 15).map((item) => (
-          <div
-            className="mini-item"
-            key={`${title}-${item.rank}-${item.name}-${item.listedPrice}`}
-          >
-            <div className="mini-rank">#{item.rank}</div>
-            <div className="mini-name">{item.name}</div>
-            <div className="mini-value">{item.listedPrice}</div>
-          </div>
-        ))}
+        {items.slice(0, 15).map((item) => {
+          const isActive = activeItemName === item.name;
+          const isClickable = Boolean(onItemClick);
+
+          return (
+            <div
+              className={`mini-item ${isClickable ? 'clickable' : ''} ${
+                isActive ? 'active' : ''
+              }`}
+              key={`${title}-${item.rank}-${item.name}-${item.listedPrice}`}
+              role={isClickable ? 'button' : undefined}
+              tabIndex={isClickable ? 0 : undefined}
+              onClick={() => {
+                onItemClick?.(item);
+              }}
+              onKeyDown={(event) => {
+                if (!isClickable) {
+                  return;
+                }
+
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  onItemClick?.(item);
+                }
+              }}
+            >
+              <div className="mini-rank">#{item.rank}</div>
+              <div className="mini-name">{item.name}</div>
+              <div className="mini-value">{item.listedPrice}</div>
+            </div>
+          );
+        })}
 
         {items.length === 0 ? (
           <div className="empty-ranking-message">
@@ -58,6 +87,9 @@ export function BaseCategorySection({
   locale = 'ko',
 }: BaseCategorySectionProps) {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+  const [selectedBaseByCategory, setSelectedBaseByCategory] = useState<
+    Record<string, string>
+  >({});
   const isEnglish = locale === 'en';
 
   const toggleCategory = (categoryName: string) => {
@@ -75,8 +107,8 @@ export function BaseCategorySection({
           </h2>
           <p className="section-desc">
             {isEnglish
-              ? 'Ranked by representative sample prices from the lowest listed prices by base type.'
-              : '베이스별 최저가 샘플 대표가 기준'}
+              ? 'Ranked by the highest lowest-listed price by base type.'
+              : '베이스별 최저가가 높은 순으로 정리한 랭킹입니다.'}
           </p>
         </div>
       </div>
@@ -85,6 +117,20 @@ export function BaseCategorySection({
         {categories.map((category) => {
           const isExpanded = expandedCategory === category.category;
           const topItem = category.previewItem;
+          const displayCategoryName = getCategoryName(
+            category.category,
+            locale,
+          );
+
+          const selectedBaseName =
+            selectedBaseByCategory[category.category] ??
+            category.filteredItems[0]?.name ??
+            '';
+
+          const selectedBaseItems =
+            category.baseSampleItems?.[selectedBaseName] ??
+            category.rawItems ??
+            [];
 
           return (
             <article
@@ -94,7 +140,7 @@ export function BaseCategorySection({
               {!isExpanded ? (
                 <div className="category-preview-row">
                   <div className="category-preview-type">
-                    {category.category}
+                    {displayCategoryName}
                   </div>
 
                   {topItem ? (
@@ -126,7 +172,7 @@ export function BaseCategorySection({
               ) : (
                 <>
                   <div className="category-card-header">
-                    <h3 className="category-title">{category.category}</h3>
+                    <h3 className="category-title">{displayCategoryName}</h3>
                     <button
                       className="detail-toggle-button"
                       type="button"
@@ -145,21 +191,32 @@ export function BaseCategorySection({
                       }
                       description={
                         isEnglish
-                          ? 'Highest sample prices by base type'
-                          : '종류별 최저가 높은순 가격'
+                          ? 'Highest lowest-listed price by base type'
+                          : '종류별 최저가가 높은 가격'
                       }
                       items={category.filteredItems}
                       locale={locale}
+                      activeItemName={selectedBaseName}
+                      onItemClick={(item) => {
+                        setSelectedBaseByCategory((current) => ({
+                          ...current,
+                          [category.category]: item.name,
+                        }));
+                      }}
                     />
 
                     <RankingList
-                      title={isEnglish ? 'Top Base Item' : '1위 베이스'}
+                      title={
+                        isEnglish
+                          ? 'Selected Base Lowest Samples'
+                          : '선택 베이스 최저가 샘플'
+                      }
                       description={
                         isEnglish
-                          ? 'Actual collected lowest listing samples for the top base item'
-                          : '베이스템의 실제 거래소 최저가격'
+                          ? 'Lowest listing samples for the selected base item'
+                          : '왼쪽에서 선택한 베이스템의 실제 거래소 최저가 샘플'
                       }
-                      items={category.rawItems}
+                      items={selectedBaseItems}
                       locale={locale}
                     />
                   </div>

@@ -3,7 +3,6 @@ export type PeriodKey = 'daily' | 'sevenDays' | 'fifteenDays' | 'thirtyDays';
 export type RankingRange = 30 | 50 | 100;
 
 export type UniquePriceBandKey =
-  | 'exalted10'
   | 'divine1'
   | 'divine10'
   | 'divine30'
@@ -48,6 +47,7 @@ export type BaseCategoryRanking = {
   previewItem?: BaseRankingItem;
   filteredItems: BaseRankingItem[];
   rawItems: BaseRankingItem[];
+  baseSampleItems: Record<string, BaseRankingItem[]>;
 };
 
 export type RareModItem = {

@@ -7,8 +7,10 @@ import {
 } from '../../data/basePriceBands';
 import {
   baseTradeQueries,
+  getTradeQueryUrl,
   rareTradeQueries,
   uniqueTradeQueries,
+  type TradeLocale,
   type TradeQueryConfig,
 } from '../../data/tradeQueries';
 import type { UniquePriceBandKey } from '../../types/market';
@@ -91,6 +93,13 @@ type CollectTarget = 'unique' | 'base' | 'rare';
 type CollectOptions = {
   target: CollectTarget;
   group?: number;
+  locale?: TradeLocale;
+};
+
+type ResolvedCollectOptions = {
+  target: CollectTarget;
+  group?: number;
+  locale: TradeLocale;
 };
 
 type FailedQueryRecord = {
@@ -100,6 +109,7 @@ type FailedQueryRecord = {
   category?: string;
   target: CollectTarget;
   group?: number;
+  locale: TradeLocale;
   failedAt: string;
   message: string;
 };
@@ -107,6 +117,7 @@ type FailedQueryRecord = {
 type RawCollectionFile = {
   target: CollectTarget;
   group?: number;
+  locale: TradeLocale;
   generatedAt: string;
   itemCount: number;
   failedCount: number;
@@ -115,12 +126,6 @@ type RawCollectionFile = {
 };
 
 const uniquePriceBands: UniquePriceBand[] = [
-  {
-    key: 'exalted10',
-    label: '10 exalted 이상',
-    min: 10,
-    currency: 'exalted',
-  },
   {
     key: 'divine1',
     label: '1 divine 이상',
@@ -148,7 +153,7 @@ const uniquePriceBands: UniquePriceBand[] = [
 ];
 
 const GROUP_SIZE = 3;
-const UNIQUE_BAND_SAMPLE_SIZE = 100;
+const UNIQUE_BAND_SAMPLE_SIZE = 50;
 const FETCH_CHUNK_SIZE = 10;
 
 const NORMAL_FETCH_DELAY_MS = 1000;
@@ -165,15 +170,18 @@ const currencyToDivineRate: Record<string, number> = {
   chaos: 1 / 600,
 };
 
-export const RAW_DATA_DIR = path.join(
-  process.cwd(),
-  'data',
-  'generated',
-  'raw',
-  'ko',
-);
-
 const failedQueries: FailedQueryRecord[] = [];
+
+export function getRawPoe2MarketDataDir(locale: TradeLocale = 'ko') {
+  return path.join(process.cwd(), 'data', 'generated', 'raw', locale);
+}
+
+function normalizeCollectOptions(options: CollectOptions): ResolvedCollectOptions {
+  return {
+    ...options,
+    locale: options.locale ?? 'ko',
+  };
+}
 
 function sleep(ms: number) {
   return new Promise((resolve) => {
@@ -496,14 +504,16 @@ function toRawMarketItem(
 ): RawMarketItem {
   const price = formatPrice(item);
 
-  const itemName =
-    item.item?.name?.trim() ||
-    item.item?.typeLine?.trim() ||
-    item.item?.baseType?.trim() ||
-    '이름 없는 아이템';
+  const rawName = item.item?.name?.trim() ?? '';
+  const rawTypeLine = item.item?.typeLine?.trim() ?? '';
+  const rawBaseType = item.item?.baseType?.trim() ?? '';
 
-  const baseName =
-    item.item?.baseType?.trim() || item.item?.typeLine?.trim() || itemName;
+  const itemName =
+    config.kind === 'unique' && rawName && rawTypeLine
+      ? `${rawName} (${rawTypeLine})`
+      : rawName || rawTypeLine || rawBaseType || '이름 없는 아이템';
+
+  const baseName = rawTypeLine || rawBaseType || itemName;
 
   return {
     queryId: config.id,
@@ -524,13 +534,21 @@ function toRawMarketItem(
 
 async function collectBaseQuery(
   config: TradeQueryConfig,
+  locale: TradeLocale,
 ): Promise<RawMarketItem[]> {
   console.log(
-    `[BASE START] ${config.label} / price bands ${basePriceBands.length}`,
+    `[BASE START] ${config.label} / locale ${locale} / price bands ${basePriceBands.length}`,
   );
 
+  const tradeUrl = getTradeQueryUrl(config, locale);
+
+  if (!tradeUrl.trim()) {
+    console.log(`[SKIP] ${config.label}: ${locale} 거래소 URL 없음`);
+    return [];
+  }
+
   const imported = await runWithRetry(`import ${config.label}`, () =>
-    importTradeQuery(config.url),
+    importTradeQuery(tradeUrl),
   );
 
   await sleep(1000);
@@ -591,13 +609,21 @@ async function collectBaseQuery(
 
 async function collectUniqueQuery(
   config: TradeQueryConfig,
+  locale: TradeLocale,
 ): Promise<RawMarketItem[]> {
   console.log(
-    `[UNIQUE START] ${config.label} / price bands ${uniquePriceBands.length}`,
+    `[UNIQUE START] ${config.label} / locale ${locale} / price bands ${uniquePriceBands.length}`,
   );
 
+  const tradeUrl = getTradeQueryUrl(config, locale);
+
+  if (!tradeUrl.trim()) {
+    console.log(`[SKIP] ${config.label}: ${locale} 거래소 URL 없음`);
+    return [];
+  }
+
   const imported = await runWithRetry(`import ${config.label}`, () =>
-    importTradeQuery(config.url),
+    importTradeQuery(tradeUrl),
   );
 
   await sleep(1000);
@@ -662,11 +688,19 @@ async function collectUniqueQuery(
 
 async function collectNormalQuery(
   config: TradeQueryConfig,
+  locale: TradeLocale,
 ): Promise<RawMarketItem[]> {
-  console.log(`[START] ${config.label} / limit ${config.limit}`);
+  console.log(`[START] ${config.label} / locale ${locale} / limit ${config.limit}`);
+
+  const tradeUrl = getTradeQueryUrl(config, locale);
+
+  if (!tradeUrl.trim()) {
+    console.log(`[SKIP] ${config.label}: ${locale} 거래소 URL 없음`);
+    return [];
+  }
 
   const imported = await runWithRetry(`import ${config.label}`, () =>
-    importTradeQuery(config.url),
+    importTradeQuery(tradeUrl),
   );
 
   await sleep(1000);
@@ -706,29 +740,27 @@ async function collectNormalQuery(
   return fetchedItems.map((item) => toRawMarketItem(config, item));
 }
 
-async function collectQuery(config: TradeQueryConfig): Promise<RawMarketItem[]> {
-  if (!config.url.trim()) {
-    console.log(`[SKIP] ${config.label}: 거래소 URL 없음`);
-    return [];
-  }
-
+async function collectQuery(
+  config: TradeQueryConfig,
+  locale: TradeLocale,
+): Promise<RawMarketItem[]> {
   if (config.kind === 'base') {
-    return collectBaseQuery(config);
+    return collectBaseQuery(config, locale);
   }
 
   if (config.kind === 'unique') {
-    return collectUniqueQuery(config);
+    return collectUniqueQuery(config, locale);
   }
 
-  return collectNormalQuery(config);
+  return collectNormalQuery(config, locale);
 }
 
 async function collectQuerySafely(
   config: TradeQueryConfig,
-  options: CollectOptions,
+  options: ResolvedCollectOptions,
 ): Promise<RawMarketItem[]> {
   try {
-    return await collectQuery(config);
+    return await collectQuery(config, options.locale);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
 
@@ -739,6 +771,7 @@ async function collectQuerySafely(
       category: config.category,
       target: options.target,
       group: options.group,
+      locale: options.locale,
       failedAt: new Date().toISOString(),
       message,
     });
@@ -763,7 +796,7 @@ function getGroupQueries(
   return queries.slice(startIndex, endIndex);
 }
 
-function getQueriesForTarget(options: CollectOptions) {
+function getQueriesForTarget(options: ResolvedCollectOptions) {
   if (options.target === 'unique') {
     return uniqueTradeQueries;
   }
@@ -775,7 +808,7 @@ function getQueriesForTarget(options: CollectOptions) {
   return getGroupQueries(rareTradeQueries, options.group);
 }
 
-function getRawFileName(options: CollectOptions) {
+function getRawFileName(options: ResolvedCollectOptions) {
   if (options.target === 'unique') {
     return 'unique.json';
   }
@@ -788,35 +821,41 @@ function getRawFileName(options: CollectOptions) {
 }
 
 async function writeRawCollectionFile(
-  options: CollectOptions,
+  options: ResolvedCollectOptions,
   items: RawMarketItem[],
 ) {
+  const rawDataDir = getRawPoe2MarketDataDir(options.locale);
+
   const fileData: RawCollectionFile = {
     target: options.target,
     group: options.group,
+    locale: options.locale,
     generatedAt: new Date().toISOString(),
     itemCount: items.length,
     failedCount: failedQueries.length,
     items,
     failedQueries: failedQueries.filter(
       (query) =>
-        query.target === options.target && query.group === options.group,
+        query.target === options.target &&
+        query.group === options.group &&
+        query.locale === options.locale,
     ),
   };
 
-  const filePath = path.join(RAW_DATA_DIR, getRawFileName(options));
+  const filePath = path.join(rawDataDir, getRawFileName(options));
 
   await writeJsonFile(filePath, fileData);
 
   console.log(`[RAW SAVED] ${filePath}`);
 }
 
-async function appendFailedQueriesFile() {
+async function appendFailedQueriesFile(locale: TradeLocale) {
   if (failedQueries.length === 0) {
     return;
   }
 
-  const failedPath = path.join(RAW_DATA_DIR, 'failed-queries.json');
+  const rawDataDir = getRawPoe2MarketDataDir(locale);
+  const failedPath = path.join(rawDataDir, 'failed-queries.json');
   const existingFailed = await readJsonFile<FailedQueryRecord[]>(failedPath);
   const nextFailed = [...(existingFailed ?? []), ...failedQueries];
 
@@ -825,33 +864,37 @@ async function appendFailedQueriesFile() {
   console.log(`[FAILED SAVED] ${failedPath}`);
 }
 
-export async function cleanRawPoe2MarketData() {
-  await rm(RAW_DATA_DIR, { recursive: true, force: true });
-  await mkdir(RAW_DATA_DIR, { recursive: true });
-  console.log(`[RAW CLEANED] ${RAW_DATA_DIR}`);
+export async function cleanRawPoe2MarketData(locale: TradeLocale = 'ko') {
+  const rawDataDir = getRawPoe2MarketDataDir(locale);
+
+  await rm(rawDataDir, { recursive: true, force: true });
+  await mkdir(rawDataDir, { recursive: true });
+  console.log(`[RAW CLEANED] ${rawDataDir}`);
 }
 
 export async function collectPoe2Market(options: CollectOptions) {
   failedQueries.length = 0;
 
-  const queries = getQueriesForTarget(options);
+  const resolvedOptions = normalizeCollectOptions(options);
+  const queries = getQueriesForTarget(resolvedOptions);
   const rawItems: RawMarketItem[] = [];
 
   console.log('========================================');
   console.log('POE2 raw collection start');
-  console.log(`target: ${options.target}`);
-  console.log(`group: ${options.group ?? 'all'}`);
+  console.log(`locale: ${resolvedOptions.locale}`);
+  console.log(`target: ${resolvedOptions.target}`);
+  console.log(`group: ${resolvedOptions.group ?? 'all'}`);
   console.log(`queries: ${queries.length}`);
   console.log('========================================');
 
   for (const query of queries) {
-    const items = await collectQuerySafely(query, options);
+    const items = await collectQuerySafely(query, resolvedOptions);
     rawItems.push(...items);
     await sleep(1500);
   }
 
-  await writeRawCollectionFile(options, rawItems);
-  await appendFailedQueriesFile();
+  await writeRawCollectionFile(resolvedOptions, rawItems);
+  await appendFailedQueriesFile(resolvedOptions.locale);
 
   console.log('========================================');
   console.log(`POE2 raw collection done: ${rawItems.length}`);

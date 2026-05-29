@@ -16,7 +16,6 @@ type UniqueRankingSectionProps = {
 };
 
 const englishUniqueRangeLabels: Record<UniqueRankingRange, string> = {
-  exalted10: '10 Exalted+',
   divine1: '1 Divine+',
   divine10: '10 Divine+',
   divine30: '30 Divine+',
@@ -28,7 +27,7 @@ export function UniqueRankingSection({
   locale = 'ko',
 }: UniqueRankingSectionProps) {
   const [activeRange, setActiveRange] =
-    useState<UniqueRankingRange>('exalted10');
+    useState<UniqueRankingRange>('divine1');
 
   const visibleItems = rankingsByRange[activeRange] ?? [];
   const isEnglish = locale === 'en';
@@ -44,8 +43,8 @@ export function UniqueRankingSection({
           </h2>
           <p className="section-desc">
             {isEnglish
-              ? 'Unique items are sampled by price range and ranked by listings that disappeared compared with the previous day. Because unique listings often include fake or distorted prices, this data should be used only as a rough reference.'
-              : '전체 유니크를 가격구간별로 샘플링해 전날 대비 빠진 매물 순으로 정리합니다. 유니크는 허위매물이 많아서 정보 수집이 힘들어요ㅠㅠ 그냥 참고만...'}
+              ? 'Unique items are sampled by price range and ranked by listings that disappeared compared with the previous collection data. Because unique listing data can be unstable, this should be used only as a rough reference.'
+              : '전체 유니크를 가격구간별로 샘플링해 최근 수집 데이터 대비 빠진 매물 순으로 정리합니다. 유니크는 정보 수집이 불안정할 수 있어요ㅠㅠ 그냥 참고만...'}
           </p>
         </div>
       </div>
@@ -91,7 +90,7 @@ export function UniqueRankingSection({
               <p className="rank-sub">
                 {isEnglish
                   ? `Previous ${item.previousCount} → Current ${item.currentCount}`
-                  : `전일 ${item.previousCount}개 → 금일 ${item.currentCount}개`}
+                  : `이전 ${item.previousCount}개 → 현재 ${item.currentCount}개`}
               </p>
             </div>
 
@@ -110,8 +109,8 @@ export function UniqueRankingSection({
         {visibleItems.length === 0 ? (
           <div className="empty-ranking-message">
             {isEnglish
-              ? 'No previous-day comparison data yet. Please check again tomorrow.'
-              : '아직 비교할 전날 데이터가 없습니다. 하루만 기다려주세요ㅠㅠ'}
+              ? 'No previous collection data is available yet. Please check again after the next update.'
+              : '아직 비교할 이전 수집 데이터가 없습니다. 다음 수집 이후 다시 확인해주세요ㅠㅠ'}
           </div>
         ) : null}
       </div>

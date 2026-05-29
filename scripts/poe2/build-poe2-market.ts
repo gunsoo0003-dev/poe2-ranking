@@ -4,6 +4,7 @@ import path from 'node:path';
 import {
   baseTradeQueries,
   rareTradeQueries,
+  type TradeLocale,
 } from '../../data/tradeQueries';
 import type {
   BaseCategoryRanking,
@@ -17,7 +18,10 @@ import type {
   UniqueRankingItem,
   UniqueRankingRange,
 } from '../../types/market';
-import { RAW_DATA_DIR, type RawMarketItem } from './collect-poe2-market';
+import {
+  getRawPoe2MarketDataDir,
+  type RawMarketItem,
+} from './collect-poe2-market';
 
 type BaseGroupSummary = {
   baseName: string;
@@ -48,12 +52,14 @@ type UniqueHistoryItem = {
 
 type UniqueHistorySnapshot = {
   date: string;
+  locale: TradeLocale;
   bands: Record<UniqueRankingRange, UniqueHistoryItem[]>;
 };
 
 type RawCollectionFile = {
   target: 'unique' | 'base' | 'rare';
   group?: number;
+  locale?: TradeLocale;
   generatedAt: string;
   itemCount: number;
   failedCount?: number;
@@ -61,12 +67,6 @@ type RawCollectionFile = {
 };
 
 const uniquePriceBands: UniquePriceBand[] = [
-  {
-    key: 'exalted10',
-    label: '10 exalted 이상',
-    min: 10,
-    currency: 'exalted',
-  },
   {
     key: 'divine1',
     label: '1 divine 이상',
@@ -94,7 +94,6 @@ const uniquePriceBands: UniquePriceBand[] = [
 ];
 
 const uniqueRankingRanges: UniqueRankingRange[] = [
-  'exalted10',
   'divine1',
   'divine10',
   'divine30',
@@ -106,7 +105,7 @@ const rankingRanges: RankingRange[] = [30, 50, 100];
 const periods = ['daily', 'sevenDays', 'fifteenDays', 'thirtyDays'] as const;
 
 const BASE_SAMPLE_SIZE = 5;
-const BASE_MIN_SAMPLE_COUNT = 3;
+const BASE_DETAIL_SAMPLE_SIZE = 15;
 const UNIQUE_FALSE_LISTING_MIRROR_LIMIT = 100;
 const UNIQUE_FALSE_LISTING_AMOUNT_LIMIT = 999999;
 
@@ -119,13 +118,23 @@ function getKoreaDateString(offsetDays = 0) {
   return koreaTime.toISOString().slice(0, 10);
 }
 
-function getUniqueHistoryPath(date: string) {
+function getUniqueHistoryPath(locale: TradeLocale, date: string) {
   return path.join(
     process.cwd(),
     'data',
     'generated',
     'history',
+    locale,
     `unique-${date}.json`,
+  );
+}
+
+function getOutputPath(locale: TradeLocale) {
+  return path.join(
+    process.cwd(),
+    'data',
+    'generated',
+    `poe2-market-${locale}.json`,
   );
 }
 
@@ -143,16 +152,17 @@ async function readJsonFile<T>(filePath: string): Promise<T | null> {
   }
 }
 
-async function readRawMarketItems() {
+async function readRawMarketItems(locale: TradeLocale) {
   const rawItems: RawMarketItem[] = [];
   const rawFiles: RawCollectionFile[] = [];
+  const rawDataDir = getRawPoe2MarketDataDir(locale);
 
   let fileNames: string[] = [];
 
   try {
-    fileNames = await readdir(RAW_DATA_DIR);
+    fileNames = await readdir(rawDataDir);
   } catch {
-    throw new Error(`raw 데이터 폴더를 찾을 수 없습니다: ${RAW_DATA_DIR}`);
+    throw new Error(`raw 데이터 폴더를 찾을 수 없습니다: ${rawDataDir}`);
   }
 
   const jsonFileNames = fileNames
@@ -161,7 +171,7 @@ async function readRawMarketItems() {
     .sort((a, b) => a.localeCompare(b));
 
   for (const fileName of jsonFileNames) {
-    const filePath = path.join(RAW_DATA_DIR, fileName);
+    const filePath = path.join(rawDataDir, fileName);
     const fileData = await readJsonFile<RawCollectionFile>(filePath);
 
     if (!fileData) {
@@ -185,7 +195,10 @@ async function readRawMarketItems() {
   return rawItems;
 }
 
-function validateRawFiles(rawFiles: RawCollectionFile[], rawItems: RawMarketItem[]) {
+function validateRawFiles(
+  rawFiles: RawCollectionFile[],
+  rawItems: RawMarketItem[],
+) {
   const hasUniqueFile = rawFiles.some((file) => file.target === 'unique');
   const hasBaseFile = rawFiles.some((file) => file.target === 'base');
   const hasRareFile = rawFiles.some((file) => file.target === 'rare');
@@ -270,6 +283,7 @@ function toUniqueHistoryItem(item: RawMarketItem): UniqueHistoryItem | null {
 
 function buildUniqueHistorySnapshot(
   date: string,
+  locale: TradeLocale,
   rawItems: RawMarketItem[],
 ): UniqueHistorySnapshot {
   const bands = uniqueRankingRanges.reduce(
@@ -298,6 +312,7 @@ function buildUniqueHistorySnapshot(
 
   return {
     date,
+    locale,
     bands,
   };
 }
@@ -413,15 +428,9 @@ function groupBaseItems(
       );
 
       const sampleItems = sortedItems.slice(0, BASE_SAMPLE_SIZE);
+      const representativeItem = sampleItems[0];
 
-      if (sampleItems.length < BASE_MIN_SAMPLE_COUNT) {
-        return null;
-      }
-
-      const representativeIndex = Math.floor(sampleItems.length / 2);
-      const representativeItem = sampleItems[representativeIndex];
-
-      if (representativeItem.priceScore === null) {
+      if (!representativeItem || representativeItem.priceScore === null) {
         return null;
       }
 
@@ -441,7 +450,7 @@ function buildFilteredBaseItems(
   category: string,
   groups: BaseGroupSummary[],
 ): BaseRankingItem[] {
-  return groups
+  return [...groups]
     .sort((a, b) => b.representativeScore - a.representativeScore)
     .slice(0, 15)
     .map((group, index) => ({
@@ -468,9 +477,22 @@ function buildTopBaseRawItems(
     return [];
   }
 
-  return topGroup.items.slice(0, 15).map((item, index) =>
+  return topGroup.items.slice(0, BASE_DETAIL_SAMPLE_SIZE).map((item, index) =>
     toBaseRankingItem(item, index + 1, category),
   );
+}
+
+function buildBaseSampleItems(
+  category: string,
+  groups: BaseGroupSummary[],
+): Record<string, BaseRankingItem[]> {
+  return groups.reduce<Record<string, BaseRankingItem[]>>((acc, group) => {
+    acc[group.baseName] = group.items
+      .slice(0, BASE_DETAIL_SAMPLE_SIZE)
+      .map((item, index) => toBaseRankingItem(item, index + 1, category));
+
+    return acc;
+  }, {});
 }
 
 function buildBaseCategoryRanking(
@@ -480,12 +502,14 @@ function buildBaseCategoryRanking(
   const groups = groupBaseItems(category, rawItems);
   const filteredItems = buildFilteredBaseItems(category, groups);
   const rawItemsForTopBase = buildTopBaseRawItems(category, groups);
+  const baseSampleItems = buildBaseSampleItems(category, groups);
 
   return {
     category,
     previewItem: filteredItems[0],
     filteredItems,
     rawItems: rawItemsForTopBase,
+    baseSampleItems,
   };
 }
 
@@ -594,33 +618,35 @@ function buildMarketData({
   }, {} as MarketData);
 }
 
-export async function buildPoe2Market() {
+export async function buildPoe2Market(locale: TradeLocale = 'ko') {
   const today = getKoreaDateString(0);
   const yesterday = getKoreaDateString(-1);
 
-  const outputPath = path.join(
-    process.cwd(),
-    'data',
-    'generated',
-    'poe2-market-ko.json',
-  );
-
-  const currentUniqueHistoryPath = getUniqueHistoryPath(today);
-  const previousUniqueHistoryPath = getUniqueHistoryPath(yesterday);
+  const rawDataDir = getRawPoe2MarketDataDir(locale);
+  const outputPath = getOutputPath(locale);
+  const currentUniqueHistoryPath = getUniqueHistoryPath(locale, today);
+  const previousUniqueHistoryPath = getUniqueHistoryPath(locale, yesterday);
 
   const previousUniqueSnapshot =
     await readJsonFile<UniqueHistorySnapshot>(previousUniqueHistoryPath);
 
   console.log('========================================');
   console.log('POE2 final market data build start');
+  console.log(`locale: ${locale}`);
   console.log(`today: ${today}`);
-  console.log(`raw dir: ${RAW_DATA_DIR}`);
+  console.log(`raw dir: ${rawDataDir}`);
+  console.log(`output: ${outputPath}`);
   console.log(`previous unique history: ${previousUniqueHistoryPath}`);
   console.log('========================================');
 
-  const rawItems = await readRawMarketItems();
+  const rawItems = await readRawMarketItems(locale);
 
-  const currentUniqueSnapshot = buildUniqueHistorySnapshot(today, rawItems);
+  const currentUniqueSnapshot = buildUniqueHistorySnapshot(
+    today,
+    locale,
+    rawItems,
+  );
+
   const marketData = buildMarketData({
     rawItems,
     currentUniqueSnapshot,

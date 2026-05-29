@@ -751,3 +751,53 @@ button {
     justify-content: flex-start;
   }
 }
+.mini-item.clickable {
+  cursor: pointer;
+}
+
+.mini-item.clickable:hover {
+  transform: translateY(-1px);
+  border-color: rgba(16, 185, 129, 0.45);
+  background: rgba(16, 185, 129, 0.06);
+}
+
+.mini-item.active {
+  border-color: rgba(16, 185, 129, 0.7);
+  background: rgba(16, 185, 129, 0.1);
+}
+.mini-item.clickable {
+  cursor: pointer;
+  transition:
+    transform 0.16s ease,
+    border-color 0.16s ease,
+    background-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.mini-item.clickable:hover {
+  transform: translateY(-2px);
+  border-color: rgba(16, 185, 129, 0.55);
+  background: rgba(16, 185, 129, 0.07);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.mini-item.clickable:active {
+  transform: translateY(0);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.mini-item.active {
+  border-color: rgba(16, 185, 129, 0.8);
+  background: rgba(16, 185, 129, 0.12);
+  box-shadow: inset 4px 0 0 rgba(16, 185, 129, 0.85);
+}
+
+.mini-item.active .mini-name {
+  color: #047857;
+  font-weight: 800;
+}
+
+.mini-item.active .mini-value {
+  color: #047857;
+  font-weight: 800;
+}
